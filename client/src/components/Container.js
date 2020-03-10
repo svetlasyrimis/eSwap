@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { getItems } from '../services/items'
+// import { getItems } from '../services/items'
 import Routes from '../routes'
 import Header from '../screens/Header'
 
@@ -31,15 +31,17 @@ export default class Container extends Component {
         const { user, items } = this.state
         return (
             <>
-                <Header user={user} />
+                <Header />
+                {/* <Header user={user} /> */}
                 <main className="container">
-                    <Routes
+                    {/* <Routes
                         items={items}
                         user={user}
                         setUser={this.setUser}
                         addItem={this.addItem}
                         clearUser={this.clearUser}
-                    />
+                    /> */}
+                    <h1>Mando List</h1>
                 </main>
             </>
         )
