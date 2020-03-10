@@ -16,7 +16,10 @@
     "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "npx jest tests --detectOpenHandles",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
