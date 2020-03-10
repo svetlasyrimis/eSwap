@@ -1,10 +1,11 @@
 import React from 'react'
-import Container from './components/Container'
 
-export default function App() {
+const App = () => {
   return (
-    <>
-      <Container />
-    </>
+    <div>
+      <h1>Mando List</h1>
+    </div>
   )
 }
+
+export default App;
