@@ -92,16 +92,28 @@ https://marvelapp.com/a9jaafd/screen/67084205<br>
 _Wireframes should be broken into components which then should be described in a component hierarchy._<br>
 
 (in progress) <br>
-src<br>
-│   ├── App.js <br>
-│   ├── components <br>
-│   │   ├── Container.js <br>
-│   │   └── shared <br>
-│   │       ├── Footer.js <br>
-│   │       ├── Layout.js <br>
-│   │       ├── Nav.js <br>
-│   │       └── Navbar.js <br>
+Navbar<br>
+---Home <br>
+---Trade<br>
+---Support<br>
+---Search<br>
+---Sign Up<br>
+---Sign In<br>
 
+App Container<br>
+-Items<br>
+  ---Product Name<br>   
+  ---Value<br>
+  ---Profile Picture<br>
+  ---Category_id<br>
+-Floating Footer<br>
+  ---Add item button<br> 
+  ---Homepage button<br> 
+  ---Back button<br>
+-Footer<br> 
+  ---Branding copyright<br> 
+  ---Social media links<br> 
+  ---NavLinks<br> 
 
 
 
