@@ -93,27 +93,27 @@ _Wireframes should be broken into components which then should be described in a
 
 (in progress) <br>
 Navbar<br>
----Home <br>
----Trade<br>
----Support<br>
----Search<br>
----Sign Up<br>
----Sign In<br>
+-->Home <br>
+-->Trade<br>
+-->Support<br>
+-->Search<br>
+-->Sign Up<br>
+-->Sign In<br>
 
 App Container<br>
--Items<br>
-  ---Product Name<br>   
-  ---Value<br>
-  ---Profile Picture<br>
-  ---Category_id<br>
--Floating Footer<br>
-  ---Add item button<br> 
-  ---Homepage button<br> 
-  ---Back button<br>
--Footer<br> 
-  ---Branding copyright<br> 
-  ---Social media links<br> 
-  ---NavLinks<br> 
+|Items<br>
+  -->Product name<br>   
+  -->Value<br>
+  -->Profile picture<br>
+  -->Category_id<br>
+|Floating Footer<br>
+  -->Add item button<br> 
+  -->Homepage button<br> 
+  -->Back button<br>
+|Footer<br> 
+  -->Branding copyright<br> 
+  -->Social media links<br> 
+  -->NavLinks<br> 
 
 
 
