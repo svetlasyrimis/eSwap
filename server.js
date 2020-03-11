@@ -1,3 +1,6 @@
+const bodyParser = require('body-parser');
+app.use(bodyParser.json())
+
 const app = require('./app.js')
 const db = require('./db')
 
