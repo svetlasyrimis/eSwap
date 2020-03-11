@@ -91,7 +91,7 @@ https://marvelapp.com/a9jaafd/screen/67084205<br>
 ## Component Hierarchy 
 _Wireframes should be broken into components which then should be described in a component hierarchy._<br>
 
-(in progress)
+(in progress) <br>
 src<br>
 │   ├── App.js <br>
 │   ├── components <br>
