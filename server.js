@@ -1,8 +1,8 @@
-const bodyParser = require('body-parser');
-app.use(bodyParser.json())
-
 const app = require('./app.js')
 const db = require('./db')
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json())
 
 const PORT = process.env.PORT || 3000
 

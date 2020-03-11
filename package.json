@@ -15,9 +15,6 @@
   "jest": {
     "testEnvironment": "node",
     "test": "jest-test --detectOpenHandles"
-    "coveragePathIgnorePatterns": [
-    "/node_modules/"
-]
   },
   "keywords": [],
   "author": "",
