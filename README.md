@@ -58,7 +58,8 @@ _-lucidchart - This is a great tool for building ERDs._<br>
 _-draw.io Another great tool for ERDs._<br>
 _-ERDPlus Yet another great tool for ERDS._<br>
 
-
+(in progress)
+![Entity Relationship Diagram](EntityRelationshipDiagram.jpg)
 
 
 
@@ -85,20 +86,27 @@ _List of all of your servers routes, the structure of requests that you expect a
 _Sketches of the user interface with notes of how the user will interact with the UI._<br>
 https://marvelapp.com/a9jaafd/screen/67084205<br>
 
+![Initial Wireframe](InitialWireframe.png)
 
 ## Component Hierarchy 
 _Wireframes should be broken into components which then should be described in a component hierarchy._<br>
 
+(in progress)
+src
+│   ├── App.js
+│   ├── components
+│   │   ├── Container.js
+│   │   └── shared
+│   │       ├── Footer.js
+│   │       ├── Layout.js
+│   │       ├── Nav.js
+│   │       └── Navbar.js
 
 
 
 
 ## List Dependencies 
 _Link to any project dependencies (e.g. 3rd party APIs, libraries, linter, etc)._<br>
-
-For possible item dummy data (i.e. pics):<br>
-eBay API: <br>
-(https://www.channable.com/channels/ebay/?gclid=Cj0KCQjw0pfzBRCOARIsANi0g0v45GnbzPKjAsAGWwzO_ivk_ffP1ZNATqcII4t2edqFcSXeVPwWxn8aAvexEALw_wcB)<br>
 
 eBay RESTful API: <br>
 (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
