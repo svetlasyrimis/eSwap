@@ -132,3 +132,10 @@ MongoDb Database: (https://www.mongodb.com/) <br>
 MongoDb Atlas: (https://www.mongodb.com/cloud/atlas) <br>
 
 
+## Live Links
+
+Surge(front-end): (eSwap.surge.sh) <br>
+
+Heroku(Back-end): (https://mando-list.herokuapp.com/) <br>
+
+Db Atlas (database): () <br>
