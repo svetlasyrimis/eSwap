@@ -8,7 +8,7 @@ _-A brief explanation of the project you'll be building with the objective descr
 _-An explanation of the major challenges you expect to face while building this app and how you foresee your team solving them._<br> 
 _-A section clearly defining MVP and POST MVP._<br>
 
-**eSwap** is an e-commerce site where you can create items to swap, swap items(update), and delete items as you wish. Just like eBay you can search for things to bid on like electronic equipment, kitchen supplies, clothes, etc. Users will most likely be split into 3 categories - admin, user (authenticated) and guest (unauthenticated). Guests are able to browse, but unable to bid on or upload items. Members are able to upload items for approval, and admins have the ability to update, delete and possibly edit items. Major challenges for the project may include the backend of an e-commerce site as well as wishing to have too many features and over stretching on that.<br>
+**eSwap** is an e-commerce site where you can create items to swap, delete items from your own user profile, request another user's item, and swap items(update). Just like eBay you can search for things to "bid on" like electronic equipment, kitchen supplies, clothes, etc. Users will be split into 3 categories - admin, user (authenticated) and guest (unauthenticated). Guests are able to browse, but unable to bid on or upload items. Members are able to upload items for approval, and admins have the ability to update, delete and possibly edit items. Major challenges for the project may include the backend of an e-commerce site as well as overscoping on features.<br>
 
 
 ### MVP:
@@ -21,7 +21,7 @@ _-A section clearly defining MVP and POST MVP._<br>
 -Use flexbox and/or css grid<br>
 -Include a minimum of 5 components that your team has built<br>
 -Use React Router (included)<br>
--Look like our mockup (or better)<br>
+-Look like the mockup/wireframe (or better)<br>
 -Be properly indented and spaced<br>
 -Not include commented out code in the master branch<br>
 -Use camelCase for javascript code<br>
@@ -29,10 +29,11 @@ _-A section clearly defining MVP and POST MVP._<br>
 -Include a beautiful, professional README.md (use markdown)<br>
 
 ### Post-MVP:
+-Swapping of items(update portion of CRUD)
 -“Favoriting”/”Liking” option<br>
 -Commenting underneath items<br>
--Messaging board<br>
-_Implement Stripe<br>
+-Messaging board/Email screen within website<br>
+_Implementing Stripe<br>
 
 
 ## Feature List 
@@ -43,6 +44,8 @@ _Implement Stripe<br>
 -Swapping of items<br>
 -Creating items<br>
 -Deleting items<br>
+-Requesting of item<br>
+-Email screen directly on website<br>
 -“favoriting”/”liking” of items<br>
 -Watchlist for favorite items<br>
 -Stripe implementation<br>
