@@ -1,2 +1,0 @@
-(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[0],{11:function(e,n,t){e.exports=t(22)},16:function(e,n,t){},22:function(e,n,t){"use strict";t.r(n);var l=t(0),a=t.n(l),c=t(7),r=t.n(c),u=function(){return a.a.createElement("div",null,a.a.createElement("h1",null,"Mando List"))},i=(t(16),t(10));r.a.render(a.a.createElement(i.a,null,a.a.createElement(u,null)),document.getElementById("root"))}},[[11,1,2]]]);
-//# sourceMappingURL=main.491a46c5.chunk.js.map
