@@ -102,7 +102,7 @@ Navbar<br>
 
 App Container<br>
 |Items<br>
-  -->Product name<br>   
+  -->Product name<br>
   -->Value<br>
   -->Profile picture<br>
   -->Category_id<br>
