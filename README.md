@@ -58,7 +58,8 @@ _-lucidchart - This is a great tool for building ERDs._<br>
 _-draw.io Another great tool for ERDs._<br>
 _-ERDPlus Yet another great tool for ERDS._<br>
 
-
+(in progress)
+![Entity Relationship Diagram](EntityRelationshipDiagram.jpg)
 
 
 
@@ -85,20 +86,39 @@ _List of all of your servers routes, the structure of requests that you expect a
 _Sketches of the user interface with notes of how the user will interact with the UI._<br>
 https://marvelapp.com/a9jaafd/screen/67084205<br>
 
+![Initial Wireframe](InitialWireframe.png)
 
 ## Component Hierarchy 
 _Wireframes should be broken into components which then should be described in a component hierarchy._<br>
 
+(in progress) <br>
+Navbar<br>
+-->Home <br>
+-->Trade<br>
+-->Support<br>
+-->Search<br>
+-->Sign Up<br>
+-->Sign In<br>
 
+App Container<br>
+|Items<br>
+  -->Product name<br>
+  -->Value<br>
+  -->Profile picture<br>
+  -->Category_id<br>
+|Floating Footer<br>
+  -->Add item button<br> 
+  -->Homepage button<br> 
+  -->Back button<br>
+|Footer<br> 
+  -->Branding copyright<br> 
+  -->Social media links<br> 
+  -->NavLinks<br> 
 
 
 
 ## List Dependencies 
 _Link to any project dependencies (e.g. 3rd party APIs, libraries, linter, etc)._<br>
-
-For possible item dummy data (i.e. pics):<br>
-eBay API: <br>
-(https://www.channable.com/channels/ebay/?gclid=Cj0KCQjw0pfzBRCOARIsANi0g0v45GnbzPKjAsAGWwzO_ivk_ffP1ZNATqcII4t2edqFcSXeVPwWxn8aAvexEALw_wcB)<br>
 
 eBay RESTful API: <br>
 (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
@@ -112,3 +132,10 @@ MongoDb Database: (https://www.mongodb.com/) <br>
 MongoDb Atlas: (https://www.mongodb.com/cloud/atlas) <br>
 
 
+## Live Links
+
+Surge(front-end): (eSwap.surge.sh) <br>
+
+Heroku(Back-end): (https://mando-list.herokuapp.com/) <br>
+
+Db Atlas (database): () <br>
