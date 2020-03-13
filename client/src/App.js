@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './App.css';
+import AppContainer from './components/AppContainer';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>Mando List</h1>
+    <div className="App">
+      <AppContainer />
     </div>
-  )
+  );
 }
 
 export default App;
