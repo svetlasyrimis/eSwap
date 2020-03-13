@@ -17,20 +17,20 @@ export class AppContainer extends Component {
         }
     }
 
-    async componentDidMount() {
-        try {
-            const items = await getItems()
-            this.setState({ items })
-        } catch (err) {
-            console.error(err)
-        }
-    }
+    // async componentDidMount() {
+    //     try {
+    //         const items = await getItems()
+    //         this.setState({ items })
+    //     } catch (err) {
+    //         console.error(err)
+    //     }
+    // }
 
-    addItem = item => this.setState({ items: [...this.state.items, item] })
+    // addItem = item => this.setState({ items: [...this.state.items, item] })
 
-    setUser = user => this.setState({ user })
+    // setUser = user => this.setState({ user })
 
-    clearUser = () => this.setState({ user: null })
+    // clearUser = () => this.setState({ user: null })
 
     render() {
         const { user, items } = this.state
