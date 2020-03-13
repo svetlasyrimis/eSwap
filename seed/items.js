@@ -3,9 +3,6 @@ const Item = require('../models/item')
 const User = require('../models/user')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
-
-const faker = require('faker')
-
 const main = async () => {
 
     const user1 = await User.find({ username: 'Joe'})

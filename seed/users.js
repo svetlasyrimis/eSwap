@@ -6,8 +6,8 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 // const faker = require('faker')
 
 const main = async () => {
+
     const users = [
-      
         { username: 'Joe',
           email: 'joe@schmo.com',
           password_digest: 'joeschmo'
