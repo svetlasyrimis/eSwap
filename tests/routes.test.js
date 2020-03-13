@@ -12,7 +12,8 @@ beforeAll(async (done) => {
     const seed = async () => {
         const items = [...Array(10)].map(item => (
             {
-                title: faker.lorem.word(),
+                name: faker.lorem.word(),
+                description: faker.lorem.sentence(),
                 link: faker.lorem.sentence()
             }
         ))
@@ -43,6 +44,7 @@ describe('Items API', () => {
             .post('/api/items')
             .send({
                 title: 'Test Item',
+                description: 'Test Description',
                 link: 'http://www.testing.com'
             })
         expect(res.statusCode).toEqual(403)
@@ -59,6 +61,7 @@ describe('Items API', () => {
             .put(`/api/items/${item}`)
             .send({
                 title: 'Update Test Item',
+                description: 'Test Update Description',
                 link: 'http://www.testing.com'
             })
         expect(res.statusCode).toEqual(403)
@@ -69,6 +72,7 @@ describe('Items API', () => {
             .del(`/api/items/${item}`)
             .send({
                 title: 'Update Test Item',
+                description: 'Test Delete Description',
                 link: 'http://www.testing.com'
             })
         expect(res.statusCode).toEqual(403)
