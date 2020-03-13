@@ -39,8 +39,22 @@
 .home-container button {
   margin-left: 10px;
   border: none;
-  background-color: dimgrey;
+  background-color: #3c3a51;
   color: #fff;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 0px 10px;
+}
+
+.home-container input {
+  border-radius: 3px;
+  border: none;
+}
+
+.mando-sign-up {
+  width: 70%;
+  margin: 170px auto;
+}
+
+.mando-sign-up h4 {
+  text-align: center;
 }

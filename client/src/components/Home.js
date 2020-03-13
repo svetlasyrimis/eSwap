@@ -1,14 +1,15 @@
 import React from 'react';
 import { Jumbotron, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import Navbar from '../layouts/Navbar';
 
-const Home = () => {
+const Home = (props) => {
+    console.log(props);
     return (
         <div className="homepage">
-            <div className="top-img">
-                {/* <img src="/img/top-banner.jpg" alt="" width="100%" height="400px" /> */}
-            </div>
+            <div className="top-img"></div>
             <Jumbotron className="home-container">
+                <Navbar />
                 <div className="home-nav" style={{ display: "flex", justifyContent: "space-between" }}>
                     <span>
                         <NavLink to="/sign-up">Sign Up</NavLink>
@@ -19,9 +20,7 @@ const Home = () => {
                 <input type="text" name="" id=""/>
                 <Button>Search</Button>
             </Jumbotron>
-            <div className="bottom-img">
-                {/* <img src="img/bottom-banner.jpg" alt="" width="100%" height="400px" /> */}
-            </div>
+            <div className="bottom-img"></div>
         </div>
     )
 }
