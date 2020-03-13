@@ -8,8 +8,6 @@ const main = async () => {
     const user1 = await User.find({ username: 'Joe'})
     const user2 = await User.find({ username: 'Schmo'})
 
-//this only uses user1...testing
-    // const items = [...Array(100)].map(item => (
     const items = [
         {
             name: faker.lorem.word(),
