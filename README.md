@@ -116,8 +116,7 @@ App Container<br>
 
 ## List Dependencies 
 
-eBay RESTful API: <br>
-(https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
+eBay RESTful API: (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
 
 Unsplash for images: (https://unsplash.com/) <br>
 
