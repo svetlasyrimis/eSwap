@@ -62,7 +62,7 @@ class SignIn extends Component {
         return (
             <Container className="mando-sign-in">
                 <Navbar />
-                <h4>Mondo List Sign Up</h4>
+                <h4>eSwap Sign In</h4>
                 <Form onSubmit={this.onSignIn}>
                     <Form.Group controlId="formBasicUsername">
                         {/* <Form.Label>Username</Form.Label> */}
@@ -75,7 +75,7 @@ class SignIn extends Component {
                     {this.renderError()}
                 </Form>
                 <p>By creating an account, you agree to our   <Link to="/">terms</Link></p>
-                <p>Already have an account?  <Link to="/sign-in">Sign In</Link></p>
+                <p>Don't have an account?  <Link to="/sign-up">Sign Up</Link></p>
             </Container>
             // <div className="row">
             //     <div className="form-container">
