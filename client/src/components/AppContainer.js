@@ -6,6 +6,7 @@ import Routes from '../routes'
 import SignUp from '../screens/SignUp';
 // import Navbar from '../layouts/Navbar';
 import Header from '../screens/Header';
+import SignIn from '../screens/SignIn';
 // import { Route } from 'react-router-dom';
 
 export class AppContainer extends Component {
@@ -40,6 +41,7 @@ export class AppContainer extends Component {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/sign-up" component={SignUp} />
+                    <Route path="/sign-in" component={SignIn} />
                 </Switch>
             </div>
         )
