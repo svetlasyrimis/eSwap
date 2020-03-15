@@ -64,7 +64,7 @@ export class SignUp extends Component {
         return (
             <Container className="mando-sign-up">
                 <Navbar />
-                <h4>Mondo List Sign Up</h4>
+                <h4>eSwap Sign Up</h4>
                 <Form onSubmit={this.onSignUp}>
                     <Form.Group controlId="formBasicUsername">
                         {/* <Form.Label>Username</Form.Label> */}
