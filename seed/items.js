@@ -29,6 +29,8 @@ const main = async () => {
 
     await Item.insertMany(items)
     console.log("Created items!")
+    console.log(user1._id);
+    console.log(user2._id);
 }
 
 const run = async () => {

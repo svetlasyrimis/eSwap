@@ -6,7 +6,7 @@ const Item = new Schema(
     name: { type: String, required: true },
     description: { type: String, required: true},
     link: { type: String, required: true },
-    user: {type: Schema.Types.ObjectId, ref: 'user_id'}
+    user: {type: Schema.Types.ObjectId, ref: '_id'}
   },
   { timestamps: true }
 )
