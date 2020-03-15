@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
-import { signInUser } from '../services/auth'
+import { signUp, signInUser } from '../services/auth';
+import { Form, Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Navbar from '../layouts/Navbar';
 
 class SignIn extends Component {
     constructor() {
@@ -44,12 +47,12 @@ class SignIn extends Component {
         const toggleForm = this.state.isError ? 'danger' : ''
         if (this.state.isError) {
             return (
-                <button type="submit" className={toggleForm}>
+                <Button type="submit" className={toggleForm}>
                     {this.state.errorMsg}
-                </button>
+                </Button>
             )
         } else {
-            return <button type="submit">Sign In</button>
+            return <Button style={{ width: "100%", backgroundColor: '#3c3a51', color: "#fff" }} type="submit">Sign In</Button>
         }
     }
 
@@ -57,32 +60,49 @@ class SignIn extends Component {
         const { username, password } = this.state
 
         return (
-            <div className="row">
-                <div className="form-container">
-                    <h3>Sign In</h3>
-                    <form onSubmit={this.onSignIn}>
-                        <label>Username</label>
-                        <input
-                            required
-                            type="text"
-                            name="username"
-                            value={username}
-                            placeholder="Enter Username"
-                            onChange={this.handleChange}
-                        />
-                        <label>Password</label>
-                        <input
-                            required
-                            name="password"
-                            value={password}
-                            type="password"
-                            placeholder="Password"
-                            onChange={this.handleChange}
-                        />
-                        {this.renderError()}
-                    </form>
-                </div>
-            </div>
+            <Container className="mando-sign-in">
+                <Navbar />
+                <h4>Mondo List Sign Up</h4>
+                <Form onSubmit={this.onSignIn}>
+                    <Form.Group controlId="formBasicUsername">
+                        {/* <Form.Label>Username</Form.Label> */}
+                        <Form.Control required type="text" name="username" id="" value={username} onChange={this.handleChange} placeholder="Username" />
+                    </Form.Group>
+                    <Form.Group controlId="formBasicPassword">
+                        {/* <Form.Label>Password</Form.Label> */}
+                        <Form.Control required type="password" name="password" value={password} onChange={this.handleChange} placeholder="Password" />
+                    </Form.Group>
+                    {this.renderError()}
+                </Form>
+                <p>By creating an account, you agree to our   <Link to="/">terms</Link></p>
+                <p>Already have an account?  <Link to="/sign-in">Sign In</Link></p>
+            </Container>
+            // <div className="row">
+            //     <div className="form-container">
+            //         <h3>Sign In</h3>
+            //         <form onSubmit={this.onSignIn}>
+            //             <label>Username</label>
+            //             <input
+            //                 required
+            //                 type="text"
+            //                 name="username"
+            //                 value={username}
+            //                 placeholder="Enter Username"
+            //                 onChange={this.handleChange}
+            //             />
+            //             <label>Password</label>
+            //             <input
+            //                 required
+            //                 name="password"
+            //                 value={password}
+            //                 type="password"
+            //                 placeholder="Password"
+            //                 onChange={this.handleChange}
+            //             />
+            //             {this.renderError()}
+            //         </form>
+            //     </div>
+            // </div>
         )
     }
 }
