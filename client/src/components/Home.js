@@ -14,9 +14,11 @@ const Home = (props) => {
                     <span>
                         <NavLink to="/sign-up">Sign Up</NavLink>
                     </span>
-                    <span>Login</span>
+                    <span>
+                      <NavLink to="/login">Login</NavLink>
+                    </span>
                 </div>
-                <h1 className="home-name">Mando List</h1>
+                <h1 className="home-name">eSwap</h1>
                 <input type="text" name="" id=""/>
                 <Button>Search</Button>
             </Jumbotron>
