@@ -40,18 +40,19 @@ class SignIn extends Component {
 			})
 	}
 
-	renderError = () => {
-		const toggleForm = this.state.isError ? 'danger' : ''
-		if (this.state.isError) {
-			return (
-				<button type="submit" className={toggleForm}>
-					{this.state.errorMsg}
-				</button>
-			)
-		} else {
-			return <button type="submit">Sign In</button>
-		}
-	}
+
+    renderError = () => {
+        const toggleForm = this.state.isError ? 'danger' : ''
+        if (this.state.isError) {
+            return (
+                <button type="submit" className={toggleForm}>
+                    {this.state.errorMsg}
+                </button>
+            )
+        } else {
+            return <button type="submit">Sign In</button>
+        }
+    }
 
 	render() {
 		const{username, password} = this.state
@@ -85,7 +86,7 @@ class SignIn extends Component {
 			</div>
 		)
 	}
-}
+}	
 
 export default SignIn
 
