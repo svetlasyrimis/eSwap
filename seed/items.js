@@ -1,13 +1,13 @@
 const db = require('../db')
 const Item = require('../models/item')
 const User = require('../models/user')
+
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const faker = require('faker')
 const main = async () => {
-    const user1 = await User.find({ username: 'Joe'})
-    const user2 = await User.find({ username: 'Schmo'})
-//this only uses user1...testing
-    // const items = [...Array(100)].map(item => (
+    const user1 = await User.find({ username: 'Lia'})
+    const user2 = await User.find({ username: 'Lavina'})
+
     const items = [
         {
             name: faker.lorem.word(),

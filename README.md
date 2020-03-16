@@ -1,12 +1,6 @@
-# Mando-List (a.k.a. eSwap)
-
-## Proposal Preparation:
-_In your team's github repository, you should have:_<br>
+# eSwap (a.k.a. Mando-List)
 
 ## Project Description
-_-A brief explanation of the project you'll be building with the objective described in non-technical language._<br> 
-_-An explanation of the major challenges you expect to face while building this app and how you foresee your team solving them._<br> 
-_-A section clearly defining MVP and POST MVP._<br>
 
 **eSwap** is an e-commerce site where you can create items to swap, delete items from your own user profile, request another user's item, and swap items(update). Just like eBay you can search for things to "bid on" like electronic equipment, kitchen supplies, clothes, etc. Users will be split into 3 categories - admin, user (authenticated) and guest (unauthenticated). Guests are able to browse, but unable to bid on or upload items. Members are able to upload items for approval, and admins have the ability to update, delete and possibly edit items. Major challenges for the project may include the backend of an e-commerce site as well as overscoping on features.<br>
 
@@ -37,7 +31,6 @@ _Implementing Stripe<br>
 
 
 ## Feature List 
--_List of pieces of functionality of the app._<br>
 -Login<br>
 -Logout<br>
 -Search bar for items being swapped<br>
@@ -66,7 +59,11 @@ _-ERDPlus Yet another great tool for ERDS._<br>
 ## API Endpoint Documentations 
 _List of all of your servers routes, the structure of requests that you expect and the structure of responses they send._<br>
 
-### Items Database:<br>
+(in progress)
+eBay RESTful API: <br>
+(https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
+
+### Items Database:
 -Item ID (int)<br>
 -Item Name (String)<br>
 -Description (String)<br>
@@ -74,7 +71,7 @@ _List of all of your servers routes, the structure of requests that you expect a
 -Date Uploaded (new Date)<br>
 -Availability (Boolean)<br>
 
-### Users Database:<br>
+### Users Database:
 -User ID (int)<br>
 -User Name (String)<br>
 -User Description/Role (admin/member/guest?) - String<br>
@@ -83,7 +80,7 @@ _List of all of your servers routes, the structure of requests that you expect a
 
 
 ## Wireframes 
-_Sketches of the user interface with notes of how the user will interact with the UI._<br>
+
 https://marvelapp.com/a9jaafd/screen/67084205<br>
 
 ![Initial Wireframe](InitialWireframe.png)
@@ -118,7 +115,6 @@ App Container<br>
 
 
 ## List Dependencies 
-_Link to any project dependencies (e.g. 3rd party APIs, libraries, linter, etc)._<br>
 
 eBay RESTful API: <br>
 (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
