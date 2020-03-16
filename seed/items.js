@@ -7,7 +7,6 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const faker = require('faker')
 
 const main = async () => {
-
     const user1 = await User.find({ username: 'Joe'})
     const user2 = await User.find({ username: 'Schmo'})
 
@@ -18,7 +17,6 @@ const main = async () => {
             link: faker.internet.url(),
             user_id: user1[0]._id
         },
-
         {
             name: faker.commerce.product(),
             description: faker.lorem.sentence(),
