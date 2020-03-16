@@ -13,16 +13,16 @@ const main = async () => {
 
     const items = [
         {
-            name: faker.lorem.word(),
+            name: faker.commerce.product(),
             description: faker.lorem.sentence(),
-            link: faker.lorem.sentence(),
+            link: faker.internet.url(),
             user_id: user1[0]._id
         },
 
         {
-            name: faker.lorem.word(),
+            name: faker.commerce.product(),
             description: faker.lorem.sentence(),
-            link: faker.lorem.sentence(),
+            link: faker.internet.url(),
             user_id: user2[0]._id
         }
       ]

@@ -127,8 +127,22 @@ const deleteItem = async (req, res) => {
     }
 }
 
+const getItemByUserId = async (req, res) => {
+    try {
+        const { user_id, item_id } = req.params
+        const item = await Item.findOne({ user_id: user_id, _id: item_id })
+        if (item) {
+            return res.status(200).json({ item })
+        }
+        return res.status(404).send('Item with the specified ID does not exists')
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
+}
+
 //user functions --- may need to edit this later re: auth
 //no unit tests have been written for the below functions yet
+
 
 const createUser = async (req, res) => {
     try {
