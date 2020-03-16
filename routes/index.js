@@ -15,6 +15,11 @@ router.post('/items', restrict, controllers.createItem)
 router.put('/items/:id', restrict, controllers.updateItem)
 router.delete('/items/:id', restrict, controllers.deleteItem)
 
+//user + items
+router.get('/users/:user_id/items/:item_id', controllers.getItemByUserId)
+router.get('/users/:user_id/items', controllers.getItemsFromUser)
+router.get('/users/:id/items', controllers.getItemsFromUser)
+
 //user controllers, may need to edit/delete re: auth;
 router.get('/users', controllers.getAllUsers)
 router.get('/users/:id', controllers.getUserById)
