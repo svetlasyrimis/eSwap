@@ -89,7 +89,8 @@ export class SignUp extends Component {
             // </Container>
             <div className="row">
                 <div className="form-container">
-                    <h3>Sign Up</h3>
+              <h3>Sign Up</h3>
+              <br></br>
                     <form onSubmit={this.onSignUp}>
                         <label>Username</label>
                         <input
@@ -99,7 +100,7 @@ export class SignUp extends Component {
                             value={username}
                             placeholder="Enter username"
                             onChange={this.handleChange}
-                        />
+                        /> <br></br>
                         <label>Email address</label>
                         <input
                             required
@@ -108,7 +109,7 @@ export class SignUp extends Component {
                             value={email}
                             placeholder="Enter email"
                             onChange={this.handleChange}
-                        />
+                        /><br></br>
                         <label>Password</label>
                         <input
                             required
@@ -117,7 +118,7 @@ export class SignUp extends Component {
                             type="password"
                             placeholder="Password"
                             onChange={this.handleChange}
-                        />
+                        /><br></br>
                         <label>Password Confirmation</label>
                         <input
                             required
@@ -126,7 +127,7 @@ export class SignUp extends Component {
                             type="password"
                             placeholder="Confirm Password"
                             onChange={this.handleChange}
-                        />
+                        /><br></br>
                         {this.renderError()}
                     </form>
                 </div>
