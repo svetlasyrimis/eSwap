@@ -13,22 +13,24 @@ const main = async () => {
 
     const items = [
         {
-            name: faker.lorem.word(),
+            name: faker.commerce.product(),
             description: faker.lorem.sentence(),
-            link: faker.lorem.sentence(),
-            user: user1._id
+            link: faker.internet.url(),
+            user_id: user1[0]._id
         },
 
         {
-            name: faker.lorem.word(),
+            name: faker.commerce.product(),
             description: faker.lorem.sentence(),
-            link: faker.lorem.sentence(),
-            user: user2._id
+            link: faker.internet.url(),
+            user_id: user2[0]._id
         }
       ]
 
     await Item.insertMany(items)
     console.log("Created items!")
+    console.log(user1[0]._id);
+    console.log(user2[0]._id);
 }
 
 const run = async () => {

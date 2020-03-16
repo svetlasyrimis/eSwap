@@ -127,8 +127,37 @@ const deleteItem = async (req, res) => {
     }
 }
 
+//users + items
+
+const getItemByUserId = async (req, res) => {
+    try {
+        const { user_id, item_id } = req.params
+        const item = await Item.findOne({ user_id: user_id, _id: item_id })
+        if (item) {
+            return res.status(200).json({ item })
+        }
+        return res.status(404).send('Item with the specified ID does not exists')
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
+}
+
+const getItemsFromUser = async (req, res) => {
+    try {
+        const { user_id } = req.params
+        const items = await Item.find({ user_id: user_id })
+        if (items) {
+            return res.status(200).json({ items })
+        }
+        return res.status(404).send('User with the specified ID does not exists')
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
+}
+
 //user functions --- may need to edit this later re: auth
 //no unit tests have been written for the below functions yet
+
 
 const createUser = async (req, res) => {
     try {
@@ -202,6 +231,8 @@ module.exports = {
     getItemById,
     updateItem,
     deleteItem,
+    getItemsFromUser,
+    getItemByUserId,
     createUser,
     getAllUsers,
     getUserById,
