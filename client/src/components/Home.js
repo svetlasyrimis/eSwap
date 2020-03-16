@@ -11,12 +11,6 @@ const Home = (props) => {
             <Jumbotron className="home-container">
                 <Navbar />
                 <div className="home-nav" style={{ display: "flex", justifyContent: "space-between" }}>
-                    <span>
-                        <NavLink to="/sign-up">Sign Up</NavLink>
-                    </span>
-                    <span>
-                      <NavLink to="/login">Login</NavLink>
-                    </span>
                 </div>
                 <h1 className="home-name">eSwap</h1>
                 <input type="text" name="" id=""/>
