@@ -34,13 +34,58 @@
 
 .home-name {
   text-decoration: underline;
+  padding: 30px;
+  font-size: 60px;
 }
 
 .home-container button {
   margin-left: 10px;
   border: none;
-  background-color: dimgrey;
+  background-color: #3c3a51;
   color: #fff;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 0px 10px;
+}
+
+.home-container input {
+  border-radius: 3px;
+  border: none;
+}
+
+.mando-sign-up, .mando-sign-in {
+  width: 70%;
+  margin: 170px auto;
+}
+
+.mando-sign-up, .mando-sign-in, h4 {
+  text-align: center;
+}
+
+
+
+/*--------- Navigation Bar -------------*/
+
+div.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  word-wrap: normal;
+}
+
+div.links {
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: #C36B5B;
+}
+
+a:hover {
+  color: grey;
+}
+
+a:link {
+  font-size: 20px;
 }

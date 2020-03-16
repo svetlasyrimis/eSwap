@@ -57,7 +57,7 @@ class SignUp extends Component {
 		}
 
     render() {
-			const {emial, username, password, passwordConfirmation} = this.state
+			const {email, username, password, passwordConfirmation} = this.state
 
         return (
             <div classNAme="row">
