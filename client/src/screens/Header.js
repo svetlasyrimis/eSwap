@@ -4,7 +4,8 @@ import Navbar from '../components/shared/Navbar.js'
 
 const authenticatedOptions = (
     <div className="links">
-        <NavLink to="/change-password">Change Password</NavLink>
+        <NavLink to="/">Home</NavLink>
+				<NavLink to="/profile">Profile</NavLink>
         <NavLink to="/sign-out">Sign Out</NavLink>
         <NavLink to="/items">View Items</NavLink>
     </div>
@@ -17,18 +18,11 @@ const unauthenticatedOptions = (
     </div>
 )
 
-const alwaysOptions = (
-    <div className="links">
-        <NavLink to="/">Home</NavLink>
-    </div>
-)
-
 const Header = ({ user }) => (
     <Navbar>
-        {user && <span className="navbar-text">Welcome, {user.email}</span>}
         <div className="nav">
-            {alwaysOptions}
             {user ? authenticatedOptions : unauthenticatedOptions}
+        {user && <span className="navbar-text">Welcome, {user.email}</span>}
         </div>
     </Navbar>
 )
