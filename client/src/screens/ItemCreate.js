@@ -11,7 +11,8 @@ class ItemCreate extends Component {
 
         this.state = {
             item: {
-                title: '',
+                name: '',
+                description: '',
                 link: ''
             },
             createdItem: null
@@ -40,8 +41,8 @@ class ItemCreate extends Component {
         const res = await createItem(this.state.item)
         if (res.status === 201) {
             this.props.addItem(res.data.item)
-            this.setState({ 
-                createdItem: res.data 
+            this.setState({
+                createdItem: res.data
             })
         }
     }

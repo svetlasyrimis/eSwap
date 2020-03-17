@@ -27,4 +27,6 @@ router.post('/users', restrict, controllers.createUser)
 router.put('/users/:id', restrict, controllers.updateUser)
 router.delete('/users/:id', restrict, controllers.deleteUser)
 
+router.get('/verify', controllers.verifyUser)
+
 module.exports = router

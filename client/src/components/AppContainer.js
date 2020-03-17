@@ -9,8 +9,9 @@ import Header from '../screens/Header';
 import SignIn from '../screens/SignIn';
 import SearchPage from '../screens/SearchPage';
 // import { Route } from 'react-router-dom';
+import { verifyToken } from "../services/auth"
 
-export class AppContainer extends Component {
+class AppContainer extends Component {
   constructor() {
     super();
     this.state = {
@@ -20,12 +21,17 @@ export class AppContainer extends Component {
   }
 
   async componentDidMount() {
-    try {
-      const items = await getItems()
-      this.setState({ items })
-    } catch (err) {
-      console.error(err)
+    const user = await verifyToken()
+    console.log(user)
+    if (user) {
+      try {
+        const items = await getItems()
+        this.setState({ items })
+      } catch (err) {
+        console.error(err)
+      }
     }
+    this.setState({user})
   }
 
   addItem = item => this.setState({ items: [...this.state.items, item] })
