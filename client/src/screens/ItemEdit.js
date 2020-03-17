@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import ItemForm from '../components/shared/ItemForm'
 import { getItemById, updateItem } from '../services/items'
+import axios from 'axios'
 
 class ItemEdit extends Component {
     constructor(props) {
