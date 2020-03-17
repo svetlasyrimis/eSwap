@@ -1,50 +1,47 @@
-
-
 import React, { Component } from 'react'
-import {signUp, signInUser} from '../services/auth'
+import { signUp, signInUser } from '../services/auth'
 
 class SignUp extends Component {
     constructor() {
         super()
 
         this.state = {
-          username: '',
-					email: '',
-					password: '',
-					passwordConfirmation: '',
-					isError: false,
-					errorMsg: ''
+            username: '',
+            email: '',
+            password: '',
+            passwordConfirmation: '',
+            isError: false,
+            errorMsg: ''
         }
     }
 
-	  handleChange = event =>
-			this.setState({
-				[event.target.name]: event.target.value,
-				isError: false,
-				errorMsg: ''
-			})
+    handleChange = event =>
+        this.setState({
+            [event.target.name]: event.target.value,
+            isError: false,
+            errorMsg: ''
+        })
 
-	  onSignUp = event => {
-			event.preventDefault()
+    onSignUp = event => {
+        event.preventDefault()
 
-      
-			const {history, setUser} = this.props
-      console.log({ setUser })
-			signUp(this.state)
-					.then(() => signInUser(this.state))
-					.then(res => setUser(res.user))
-					.then(() => history.push('/'))
-					.catch(error => {
-						console.error(error)
-						this.setState({
-							email:'',
-							password: '',
-							passwordConfirmation:'',
-							isError: true,
-							errorMsg: 'Sign Up Details Invalid'
-						})
-					})
-		}
+        const { history, setUser } = this.props
+
+        signUp(this.state)
+            .then(() => signInUser(this.state))
+            .then(res => setUser(res.user))
+            .then(() => history.push('/'))
+            .catch(error => {
+                console.error(error)
+                this.setState({
+                    email: '',
+                    password: '',
+                    passwordConfirmation: '',
+                    isError: true,
+                    errorMsg: 'Sign Up Details Invalid'
+                })
+            })
+    }
 
     renderError = () => {
         const toggleForm = this.state.isError ? 'danger' : ''
@@ -55,13 +52,14 @@ class SignUp extends Component {
                 </button>
             )
         } else {
-            return <button>Sign Up</button>
+            return <button type="submit">Sign In</button>
         }
     }
 
     render() {
-			const {email, username, password, passwordConfirmation} = this.state
-					return(
+        const { email, username, password, passwordConfirmation } = this.state
+
+        return (
             <div className="row">
                 <div className="form-container">
                     <h3>Sign Up</h3>
@@ -109,6 +107,5 @@ class SignUp extends Component {
         )
     }
 }
-					      
 
 export default SignUp
