@@ -4,6 +4,9 @@
 
 **eSwap** is an e-commerce site where you can create items to swap, delete items from your own user profile, request another user's item, and swap items(update). Just like eBay you can search for things to "bid on" like electronic equipment, kitchen supplies, clothes, etc. Users will be split into 3 categories - admin, user (authenticated) and guest (unauthenticated). Guests are able to browse, but unable to bid on or upload items. Members are able to upload items for approval, and admins have the ability to update, delete and possibly edit items. Major challenges for the project may include the backend of an e-commerce site as well as overscoping on features.<br>
 
+## Relevant Instructions For Viewers:
+
+(in progress)
 
 ### MVP:
 -Use React Bootstrap <br>
@@ -49,10 +52,6 @@ _Implementing Stripe<br>
 
 
 ## Entity Relationship Diagram (ERD) 
-_Diagram of the database tables, schemas, and relations. You can draw them by hand or try one of these useful links for ERDs:_<br>
-_-lucidchart - This is a great tool for building ERDs._<br>
-_-draw.io Another great tool for ERDs._<br>
-_-ERDPlus Yet another great tool for ERDS._<br>
 
 ![Entity Relationship Diagram](assets/ERD.jpg)
 
