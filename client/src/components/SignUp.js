@@ -60,8 +60,8 @@ class SignUp extends Component {
 			const {emial, username, password, passwordConfirmation} = this.state
 
         return (
-            <div classNAme="row">
-							<div classNAme="form-container">
+            <div className="row">
+							<div className="form-container">
 								<h3>Sign Up</h3>
 								<form onSubmit={this.onSignUp}>
 									<label>Username</label>
@@ -91,7 +91,7 @@ class SignUp extends Component {
 											placeholder="Password"
 											onChange={this.handleChange}
 									/>
-									<label>PAssword Confirmation</label>
+									<label>Password Confirmation</label>
 									<input
 											required
 											name="passwordConfirmation"

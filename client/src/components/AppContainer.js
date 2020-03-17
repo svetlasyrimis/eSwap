@@ -10,7 +10,7 @@ import SignIn from '../screens/SignIn';
 // import { Route } from 'react-router-dom';
 import { verifyToken } from "../services/auth"
 
-export class AppContainer extends Component {
+class AppContainer extends Component {
   constructor() {
     super();
     this.state = {
