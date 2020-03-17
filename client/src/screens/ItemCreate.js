@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios';
 import { Redirect } from 'react-router-dom'
 import ItemForm from '../components/shared/ItemForm'
 import Layout from '../components/shared/Layout'
@@ -26,7 +27,15 @@ class ItemCreate extends Component {
     }
 
     handleSubmit = async event => {
-        event.preventDefault()
+
+        event.preventDefault();
+        axios({ 
+            url: `https://mando-list.herokuapp.com/api/items`,
+            method: 'POST',
+            data: this.state.item
+         })
+         .then(response => this.setState({ createdItem: response.data.item }))
+         .catch(console.error)
 
         const res = await createItem(this.state.item)
         if (res.status === 201) {

@@ -7,6 +7,7 @@ import SignUp from '../screens/SignUp';
 // import Navbar from '../layouts/Navbar';
 import Header from '../screens/Header';
 import SignIn from '../screens/SignIn';
+import SearchPage from '../screens/SearchPage';
 // import { Route } from 'react-router-dom';
 
 export class AppContainer extends Component {
@@ -42,6 +43,7 @@ export class AppContainer extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/sign-in" component={SignIn} />
+                    <Route path="/search" component={SearchPage} />
                 </Switch>
             </div>
         )
