@@ -23,24 +23,27 @@
 -Include a beautiful, professional README.md (use markdown)<br>
 
 ### Post-MVP:
--Swapping of items(update portion of CRUD)
 -“Favoriting”/”Liking” option<br>
--Commenting underneath items<br>
--Messaging board/Email screen within website<br>
+-Email screen within website so that user can request an item<br>
+-Commenting underneath each item for enhanced/quicker user experience<br>
+-Swapping of items<br>
 _Implementing Stripe<br>
 
 
 ## Feature List 
--Login<br>
--Logout<br>
--Search bar for items being swapped<br>
--Swapping of items<br>
+-Sign Up<br>
+-Sign In<br>
+-Sign Out<br>
+-User can refresh page and still stay signed in<br>
+-Search bar to request items<br>
 -Creating items<br>
+-Retrieving items<br>
+-Updating items<br>
 -Deleting items<br>
--Requesting of item<br>
--Email screen directly on website<br>
+-Email screen directly on website to request an item<br>
 -“favoriting”/”liking” of items<br>
 -Watchlist for favorite items<br>
+-Swapping of items<br>
 -Stripe implementation<br>
 
 
@@ -51,15 +54,7 @@ _-lucidchart - This is a great tool for building ERDs._<br>
 _-draw.io Another great tool for ERDs._<br>
 _-ERDPlus Yet another great tool for ERDS._<br>
 
-(in progress)
-![Entity Relationship Diagram](EntityRelationshipDiagram.jpg)
-
-
-
-## API Endpoint Documentations 
-_List of all of your servers routes, the structure of requests that you expect and the structure of responses they send._<br>
-
-eBay RESTful API: (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
+![Entity Relationship Diagram](ERD.jpg)
 
 ### Items Database:
 -Item ID (int)<br>
@@ -77,6 +72,13 @@ eBay RESTful API: (https://developer.ebay.com/api-docs/static/ebay-rest-landing.
 -Date joined (new Date)<br>
 
 
+## API Endpoint Documentations 
+_List of all of your servers routes, the structure of requests that you expect and the structure of responses they send._<br>
+
+eBay RESTful API: (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
+
+
+
 ## Wireframes 
 
 https://marvelapp.com/a9jaafd/screen/67084205<br>
@@ -85,6 +87,8 @@ https://marvelapp.com/a9jaafd/screen/67084205<br>
 
 ## Component Hierarchy 
 _Wireframes should be broken into components which then should be described in a component hierarchy._<br>
+
+### Initial Component Hierarchy
 
 Navbar<br>
 -->Home <br>
@@ -109,42 +113,16 @@ App Container<br>
   -->Social media links<br> 
   -->NavLinks<br> 
 
-### Front-End File Hierarchy
-
-├── App.css <br>
-├── App.js <br>
-├── components <br>
-│   ├── AppContainer.js <br>
-│   ├── Home.js <br>
-│   └── shared <br>
-│       ├── ItemForm.js <br>
-│       ├── Layout.js <br>
-│       ├── Nav.js <br>
-│       └── Navbar.js <br>
-├── index.css <br>
-├── index.js <br>
-├── layouts <br>
-│   ├── Footer.js <br>
-│   └── Navbar.js <br>
-├── routes <br>
-│   ├── AuthenticatedRoute.js <br>
-│   └── index.js <br>
-├── screens <br>
-│   ├── Header.js <br>
-│   ├── Home.js <br>
-│   ├── Item.js <br>
-│   ├── ItemCreate.js <br>
-│   ├── ItemEdit.js <br>
-│   ├── Items.js <br>
-│   ├── Landing.js <br>
-│   ├── SignIn.js <br>
-│   ├── SignOut.js <br>
-│   └── SignUp.js <br>
-├── services <br>
-│   ├── apiConfig.js <br>
-│   ├── auth.js <br>
-│   └── items.js <br>
-└── setupTests.js <br>
+### Current Component File Hierarchy
+.
+├── AppContainer.js <br>
+├── Home.js <br>
+├── SignUp.js <br>
+└── shared <br>
+    ├── ItemForm.js <br>
+    ├── Layout.js <br>
+    ├── Nav.js <br>
+    └── Navbar.js <br>
 
 
 ## List Dependencies 
