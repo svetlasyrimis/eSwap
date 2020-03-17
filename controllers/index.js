@@ -10,9 +10,10 @@ const SALT_ROUNDS = 11
 const TOKEN_KEY = 'areallylonggoodkey'
 
 //authentication functions
-
 const signUp = async (req, res) => {
+  console.log('here sign up function')
     try {
+      
         const { username, email, password } = req.body
         const password_digest = await bcrypt.hash(password, SALT_ROUNDS)
         const user = await new User({

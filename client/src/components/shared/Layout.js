@@ -2,17 +2,18 @@
 import React from 'react'
 
 import Nav from './Nav'
+import Footer from './Footer'
 
 const Layout = (props) => (
     <div className='layout'>
         <div className='content'>
             <Nav />
             <div className='main'>
-                <h1>Items App</h1>
+                <h1>eSwap</h1>
                 {props.children}
             </div>
         </div>
-        {/* <Footer /> */}
+        <Footer /> 
     </div>
 )
 

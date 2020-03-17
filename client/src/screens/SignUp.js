@@ -27,8 +27,9 @@ class SignUp extends Component {
 	  onSignUp = event => {
 			event.preventDefault()
 
+      
 			const {history, setUser} = this.props
-
+      console.log({ setUser })
 			signUp(this.state)
 					.then(() => signInUser(this.state))
 					.then(res => setUser(res.user))
