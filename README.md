@@ -54,20 +54,20 @@ _-lucidchart - This is a great tool for building ERDs._<br>
 _-draw.io Another great tool for ERDs._<br>
 _-ERDPlus Yet another great tool for ERDS._<br>
 
-![Entity Relationship Diagram](ERD.jpg)
+![Entity Relationship Diagram](assets/ERD.jpg)
 
 ### Items Database:
 -Item ID (int)<br>
 -Item Name (String)<br>
 -Description (String)<br>
--Name(of owner) (String) one to many?<br>
+-Name(of owner) (String)<br>
 -Date Uploaded (new Date)<br>
 -Availability (Boolean)<br>
 
 ### Users Database:
 -User ID (int)<br>
 -User Name (String)<br>
--User Description/Role (admin/member/guest?) - String<br>
+-User Description/Role (admin/member/guest) (String) <br>
 -Password<br>
 -Date joined (new Date)<br>
 
@@ -83,7 +83,7 @@ eBay RESTful API: (https://developer.ebay.com/api-docs/static/ebay-rest-landing.
 
 https://marvelapp.com/a9jaafd/screen/67084205<br>
 
-![Initial Wireframe](InitialWireframe.png)
+![Initial Wireframe](assets/InitialWireframe.png)
 
 ## Component Hierarchy 
 _Wireframes should be broken into components which then should be described in a component hierarchy._<br>
@@ -115,7 +115,7 @@ App Container<br>
 
 ### Current Component File Hierarchy
 
-![Current Component Hierarchy](CurrentComponentHierarchy.png)
+![Current Component Hierarchy](assets/CurrentComponentHierarchy.png)
 
 
 ## List Dependencies 
@@ -133,8 +133,8 @@ MongoDb Atlas: (https://www.mongodb.com/cloud/atlas) <br>
 
 ## Live Links
 
-Surge(front-end): (eSwap.surge.sh) <br>
+Surge(front-end): (http://eswap.surge.sh/) <br>
 
 Heroku(Back-end): (https://mando-list.herokuapp.com/) <br>
 
-Db Atlas (database): ![Successful Deployment of Mongodb Atlas Database](Successful_Deployment_of_Mongodb_Atlas_Database.png) <br>
+Db Atlas (database): ![Successful Deployment of Mongodb Atlas Database](assets/Successful_Deployment_of_Mongodb_Atlas_Database.png) <br>
