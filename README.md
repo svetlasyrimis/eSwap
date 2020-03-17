@@ -114,15 +114,8 @@ App Container<br>
   -->NavLinks<br> 
 
 ### Current Component File Hierarchy
-.
-├── AppContainer.js <br>
-├── Home.js <br>
-├── SignUp.js <br>
-└── shared <br>
-    ├── ItemForm.js <br>
-    ├── Layout.js <br>
-    ├── Nav.js <br>
-    └── Navbar.js <br>
+
+![Current Component Hierarchy](CurrentComponentHierarchy.png)
 
 
 ## List Dependencies 
