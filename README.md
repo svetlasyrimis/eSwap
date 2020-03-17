@@ -1,9 +1,12 @@
-# eSwap (a.k.a. Mando-List)
+# eSwap
 
 ## Project Description
 
-**eSwap** is an e-commerce site where you can create items to swap, delete items from your own user profile, request another user's item, and swap items(update). Just like eBay you can search for things to "bid on" like electronic equipment, kitchen supplies, clothes, etc. Users will be split into 3 categories - admin, user (authenticated) and guest (unauthenticated). Guests are able to browse, but unable to bid on or upload items. Members are able to upload items for approval, and admins have the ability to update, delete and possibly edit items. Major challenges for the project may include the backend of an e-commerce site as well as overscoping on features.<br>
+**eSwap** is an e-commerce site where you can create items, delete items from your own user profile, request another user's item, and swap items. Just like eBay you can search for things to bid on/request like electronic equipment, kitchen supplies, clothes, etc. Users will be split into 3 categories - admin, user (authenticated) and guest (unauthenticated). Guests are able to browse, but unable to bid on or upload items. Members are able to upload items for approval, and admins have the ability to update, delete and possibly edit items. Major challenges for the project included tying the backend together with the front-end of an e-commerce site as well as overscoping on the features. Post-mvp features include having an email screen that directly pops up on the website to request another user's item, “favoriting”/”liking” of items, having a watchlist for favorite items, swapping of items, and stripe implementation. <br>
 
+## Relevant Instructions For Viewers:
+
+**eSwap** is an e-commerce site where you, as the user, can create items on your own user profile, delete items from your own user profile, request another user's item, and swap items. The main page has a place to sign up for an account, sign in if you are re-visiting the site, and a search bar for the main database of items that each user has. If you are a user (authenticated) then you can create items to give away, request another user's items, and swap items with another user. If you are a guest (unauthenticated) then you can only view a list of items that are available via the search bar.
 
 ### MVP:
 -Use React Bootstrap <br>
@@ -47,12 +50,7 @@ _Implementing Stripe<br>
 -Stripe implementation<br>
 
 
-
 ## Entity Relationship Diagram (ERD) 
-_Diagram of the database tables, schemas, and relations. You can draw them by hand or try one of these useful links for ERDs:_<br>
-_-lucidchart - This is a great tool for building ERDs._<br>
-_-draw.io Another great tool for ERDs._<br>
-_-ERDPlus Yet another great tool for ERDS._<br>
 
 ![Entity Relationship Diagram](assets/ERD.jpg)
 
@@ -70,14 +68,6 @@ _-ERDPlus Yet another great tool for ERDS._<br>
 -User Description/Role (admin/member/guest) (String) <br>
 -Password<br>
 -Date joined (new Date)<br>
-
-
-## API Endpoint Documentations 
-_List of all of your servers routes, the structure of requests that you expect and the structure of responses they send._<br>
-
-eBay RESTful API: (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
-
-
 
 ## Wireframes 
 
@@ -121,6 +111,8 @@ App Container<br>
 ## List Dependencies 
 
 eBay RESTful API: (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
+
+Craigslist API: (https://github.com/mislam/craigslist-api)<br>
 
 Unsplash for images: (https://unsplash.com/) <br>
 
