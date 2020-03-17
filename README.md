@@ -109,42 +109,42 @@ App Container<br>
   -->Social media links<br> 
   -->NavLinks<br> 
 
-Front-End File Hierarchy
+### Front-End File Hierarchy
 
-├── App.css
-├── App.js
-├── components
-│   ├── AppContainer.js
-│   ├── Home.js
-│   └── shared
-│       ├── ItemForm.js
-│       ├── Layout.js
-│       ├── Nav.js
-│       └── Navbar.js
-├── index.css
-├── index.js
-├── layouts
-│   ├── Footer.js
-│   └── Navbar.js
-├── routes
-│   ├── AuthenticatedRoute.js
-│   └── index.js
-├── screens
-│   ├── Header.js
-│   ├── Home.js
-│   ├── Item.js
-│   ├── ItemCreate.js
-│   ├── ItemEdit.js
-│   ├── Items.js
-│   ├── Landing.js
-│   ├── SignIn.js
-│   ├── SignOut.js
-│   └── SignUp.js
-├── services
-│   ├── apiConfig.js
-│   ├── auth.js
-│   └── items.js
-└── setupTests.js
+├── App.css <br>
+├── App.js <br>
+├── components <br>
+│   ├── AppContainer.js <br>
+│   ├── Home.js <br>
+│   └── shared <br>
+│       ├── ItemForm.js <br>
+│       ├── Layout.js <br>
+│       ├── Nav.js <br>
+│       └── Navbar.js <br>
+├── index.css <br>
+├── index.js <br>
+├── layouts <br>
+│   ├── Footer.js <br>
+│   └── Navbar.js <br>
+├── routes <br>
+│   ├── AuthenticatedRoute.js <br>
+│   └── index.js <br>
+├── screens <br>
+│   ├── Header.js <br>
+│   ├── Home.js <br>
+│   ├── Item.js <br>
+│   ├── ItemCreate.js <br>
+│   ├── ItemEdit.js <br>
+│   ├── Items.js <br>
+│   ├── Landing.js <br>
+│   ├── SignIn.js <br>
+│   ├── SignOut.js <br>
+│   └── SignUp.js <br>
+├── services <br>
+│   ├── apiConfig.js <br>
+│   ├── auth.js <br>
+│   └── items.js <br>
+└── setupTests.js <br>
 
 
 ## List Dependencies 
