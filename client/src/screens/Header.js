@@ -6,6 +6,7 @@ const authenticatedOptions = (
     <div className="links">
         <NavLink to="/change-password">Change Password</NavLink>
         <NavLink to="/sign-out">Sign Out</NavLink>
+        <NavLink to="/items">View Items</NavLink>
     </div>
 )
 

@@ -7,6 +7,7 @@ import SignUp from '../screens/SignUp';
 // import Navbar from '../layouts/Navbar';
 import Header from '../screens/Header';
 import SignIn from '../screens/SignIn';
+
 // import { Route } from 'react-router-dom';
 import { verifyToken } from "../services/auth"
 
