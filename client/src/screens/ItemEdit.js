@@ -36,6 +36,15 @@ class ItemEdit extends Component {
     handleSubmit = event => {
         event.preventDefault()
 
+        axios({
+            url: `http://localhost:3000/api/items/${this.props.match.params.id}`,
+            method: 'PUT',
+            data: this.state.item
+        })
+            .then(() => this.setState({ updated: true }))
+            .catch(console.error)
+        }
+
         updateItem(this.props.match.params.id, { ...this.state.item })
             .then(() => this.setState({ updated: true }))
             .catch(console.error)
