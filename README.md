@@ -59,9 +59,7 @@ _-ERDPlus Yet another great tool for ERDS._<br>
 ## API Endpoint Documentations 
 _List of all of your servers routes, the structure of requests that you expect and the structure of responses they send._<br>
 
-(in progress)
-eBay RESTful API: <br>
-(https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
+eBay RESTful API: (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
 
 ### Items Database:
 -Item ID (int)<br>
@@ -88,7 +86,6 @@ https://marvelapp.com/a9jaafd/screen/67084205<br>
 ## Component Hierarchy 
 _Wireframes should be broken into components which then should be described in a component hierarchy._<br>
 
-(in progress) <br>
 Navbar<br>
 -->Home <br>
 -->Trade<br>
@@ -112,6 +109,42 @@ App Container<br>
   -->Social media links<br> 
   -->NavLinks<br> 
 
+### Front-End File Hierarchy
+
+├── App.css <br>
+├── App.js <br>
+├── components <br>
+│   ├── AppContainer.js <br>
+│   ├── Home.js <br>
+│   └── shared <br>
+│       ├── ItemForm.js <br>
+│       ├── Layout.js <br>
+│       ├── Nav.js <br>
+│       └── Navbar.js <br>
+├── index.css <br>
+├── index.js <br>
+├── layouts <br>
+│   ├── Footer.js <br>
+│   └── Navbar.js <br>
+├── routes <br>
+│   ├── AuthenticatedRoute.js <br>
+│   └── index.js <br>
+├── screens <br>
+│   ├── Header.js <br>
+│   ├── Home.js <br>
+│   ├── Item.js <br>
+│   ├── ItemCreate.js <br>
+│   ├── ItemEdit.js <br>
+│   ├── Items.js <br>
+│   ├── Landing.js <br>
+│   ├── SignIn.js <br>
+│   ├── SignOut.js <br>
+│   └── SignUp.js <br>
+├── services <br>
+│   ├── apiConfig.js <br>
+│   ├── auth.js <br>
+│   └── items.js <br>
+└── setupTests.js <br>
 
 
 ## List Dependencies 
@@ -133,4 +166,4 @@ Surge(front-end): (eSwap.surge.sh) <br>
 
 Heroku(Back-end): (https://mando-list.herokuapp.com/) <br>
 
-Db Atlas (database): () <br>
+Db Atlas (database): ![Successful Deployment of Mongodb Atlas Database](Successful_Deployment_of_Mongodb_Atlas_Database.png) <br>

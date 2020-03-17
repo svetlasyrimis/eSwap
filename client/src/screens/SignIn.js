@@ -59,7 +59,8 @@ class SignIn extends Component {
         return (
             <div className="row">
                 <div className="form-container">
-                    <h3>Sign In</h3>
+              <h3>Sign In</h3>
+              <br></br>
                     <form onSubmit={this.onSignIn}>
                         <label>Username</label>
                         <input
@@ -69,7 +70,7 @@ class SignIn extends Component {
                             value={username}
                             placeholder="Enter Username"
                             onChange={this.handleChange}
-                        />
+                        /> <br></br>
                         <label>Password</label>
                         <input
                             required
@@ -78,7 +79,7 @@ class SignIn extends Component {
                             type="password"
                             placeholder="Password"
                             onChange={this.handleChange}
-                        />
+                        /> <br></br>
                         {this.renderError()}
                     </form>
                 </div>
