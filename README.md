@@ -60,14 +60,14 @@ _-ERDPlus Yet another great tool for ERDS._<br>
 -Item ID (int)<br>
 -Item Name (String)<br>
 -Description (String)<br>
--Name(of owner) (String) one to many?<br>
+-Name(of owner) (String)<br>
 -Date Uploaded (new Date)<br>
 -Availability (Boolean)<br>
 
 ### Users Database:
 -User ID (int)<br>
 -User Name (String)<br>
--User Description/Role (admin/member/guest?) - String<br>
+-User Description/Role (admin/member/guest) (String) <br>
 -Password<br>
 -Date joined (new Date)<br>
 
