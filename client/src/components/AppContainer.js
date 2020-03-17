@@ -11,29 +11,30 @@ import SearchPage from '../screens/SearchPage';
 // import { Route } from 'react-router-dom';
 
 export class AppContainer extends Component {
-    constructor() {
-        super();
-        this.state = {
-            user: null,
-            items: []
-        }
+  constructor() {
+    super();
+    this.state = {
+      user: null,
+      items: []
     }
+  }
 
-    // async componentDidMount() {
-    //     try {
-    //         const items = await getItems()
-    //         this.setState({ items })
-    //     } catch (err) {
-    //         console.error(err)
-    //     }
-    // }
+  async componentDidMount() {
+    try {
+      const items = await getItems()
+      this.setState({ items })
+    } catch (err) {
+      console.error(err)
+    }
+  }
 
-    // addItem = item => this.setState({ items: [...this.state.items, item] })
+  addItem = item => this.setState({ items: [...this.state.items, item] })
 
-    // setUser = user => this.setState({ user })
+  setUser = user => this.setState({ user })
 
-    // clearUser = () => this.setState({ user: null })
+  clearUser = () => this.setState({ user: null })
 
+<<<<<<< HEAD
     render() {
         const { user, items } = this.state
         return (
@@ -48,6 +49,26 @@ export class AppContainer extends Component {
             </div>
         )
     }
+=======
+  render() {
+    const { user, items } = this.state
+    return (
+      <div>
+        <Header user={user} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Routes
+            items={items}
+            user={user}
+            setUser={this.setUser}
+            addItem={this.addItem}
+            clearUser={this.clearUser}
+          />
+        </Switch>
+      </div>
+    )
+  }
+>>>>>>> d44e8fa99577dc70b509d00bbd70860c26086cda
 }
 
 export default AppContainer;
