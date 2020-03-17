@@ -34,22 +34,6 @@ export class AppContainer extends Component {
 
   clearUser = () => this.setState({ user: null })
 
-<<<<<<< HEAD
-    render() {
-        const { user, items } = this.state
-        return (
-            <div>
-                <Header user={user} />
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/sign-up" component={SignUp} />
-                    <Route path="/sign-in" component={SignIn} />
-                    <Route path="/search" component={SearchPage} />
-                </Switch>
-            </div>
-        )
-    }
-=======
   render() {
     const { user, items } = this.state
     return (
@@ -68,7 +52,6 @@ export class AppContainer extends Component {
       </div>
     )
   }
->>>>>>> d44e8fa99577dc70b509d00bbd70860c26086cda
 }
 
 export default AppContainer;
