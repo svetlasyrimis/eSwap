@@ -120,3 +120,57 @@ a {
 a:link {
   font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Search Page Styles */
+
+.item-categories {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.item-cat {
+  margin: 0 15px;
+}
+
+.item-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.items {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.item {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+  margin: 40px 50px;
+}
+
