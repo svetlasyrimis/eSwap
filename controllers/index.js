@@ -194,9 +194,12 @@ const getAllUsers = async (req, res) => {
 }
 
 const getUserById = async (req, res) => {
+    console.log('here')
     try {
         const { id } = req.params;
+        console.log(typeof(id), id)
         const user = await User.findById(id)
+        console.log(user);
         if (user) {
             return res.status(200).json(user)
         }

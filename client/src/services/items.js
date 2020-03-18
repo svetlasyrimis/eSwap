@@ -1,5 +1,15 @@
 import api from './apiConfig'
 
+export const getUserByID = async (id) => {
+    try {
+        const resp = await api.get(`/users/${id}`)
+        return resp.data.users
+    } catch (error) {
+        throw error
+    }
+}
+
+
 export const getItems = async () => {
     try {
         const resp = await api.get('/items')
