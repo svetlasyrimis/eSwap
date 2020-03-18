@@ -91,10 +91,10 @@ div.navbar {
 }
 
 div.navbar a {
-	padding: 1.5% 1.5%;
+	padding: .5% .5%;
 	color: #C36B5B;
   font-family: 'Roboto', sans-serif;
-	margin: 2% 2%;
+	margin: .2% .2%;
 	display: flex-row;
 	white-space: nowrap;
 	text-decoration: none;
@@ -235,16 +235,18 @@ div.content {
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 420px)
+  and (max-device-width: 420px) 
   and (-webkit-min-device-pixel-ratio: 2) {
 	
-	div.navbar {
-		width: 100%;
-		white-space: nowrap;
-		overflow-x: scroll;
-		overflow-y: hidden;
-}
+div.navbar {
+	width: 100%;
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
+div.navbar a {
+	float: left;
+}
 
+}
