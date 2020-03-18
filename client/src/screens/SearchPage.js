@@ -8,9 +8,10 @@ export class SearchPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            search: '',
-            items: [],
-            filteredList: []
+          search: '',
+          items: [],
+          filteredList: [],
+          clicked:false
         }
     }
 
@@ -28,13 +29,14 @@ export class SearchPage extends Component {
         // this.setState({ items })
         const filteredList = items.filter((item) => {
             console.log(item.name)
-            return item.name === this.state.search;
+            return item.name.toLowerCase() === this.state.search.toLowerCase()
             // return item.includes(this.state.search)
         })
         console.log(filteredList);
         this.setState({
-            filteredList: filteredList
-        });
+          filteredList: filteredList,
+          clicked:true
+      });
         const getUserName = await getUserByID('5e7156b1b477bf3888a5ac3e')
         console.log(getUserName);
 
@@ -51,30 +53,36 @@ export class SearchPage extends Component {
         const filteredList = this.state.filteredList.map((item, index) => {
             return (
                 <div key={index}>
-                    <div>
-                        {item.name}
-                        {item.description}
-                        {/* {this.getUsername(item.user_id)} */}
+                    <div className="main-search-item">
+                      <h4>{item.name}</h4>
+                      <p>Description: {item.description}</p>
+                      <p>Link: {item.link}</p>
+                      <p>User Id: {item.user_id}</p>
+                      <img src={item.link} alt="img link" width="400px" height="350px" />
+                      <br></br>
                     </div>
-                    <img src={item.link} alt="img link" width="350px" height="350px" />
                 </div>
             )
         })
+      
         const items = this.props.items.map((item, index) => {
             return (
                 <div key={index}>
-                    <div>
-                        {item.name}
-                        {item.description}
-                    </div>
-                    <img src={item.link} alt="img link" width="350px" height="350px" />
+                    <div className="main-search-item">
+                      <h4>{item.name}</h4>
+                      <p>Description: {item.description}</p>
+                      <p>Link: {item.link}</p>
+                      <p>User Id: {item.user_id}</p>
+                      <img src={item.link} alt="img link" width="400px" height="350px" />
+                      <br></br>
+                  </div>
                 </div>
             )
         });
         console.log(this.props);
         return (
             <>
-                <div className="item-categories">
+                {/* <div className="item-categories">
                     <div className="item-cat">
                         <button>Item Category</button>
                     </div>
@@ -84,7 +92,7 @@ export class SearchPage extends Component {
                     <div className="item-cat">
                         <button>Item Category</button>
                     </div>
-                </div>
+                </div> */}
                 <form onSubmit={this.handleSubmit} className="item-search">
                     <input type="text" onChange={this.onSearch} value={this.state.value} name="search" id="" placeholder="Search" />
                     <button type="submit">Submit</button>
@@ -94,7 +102,9 @@ export class SearchPage extends Component {
                     <div className="item">item</div>
                     <div className="item">item</div>
                     <div className="item">item</div> */}
-                    {filteredList.length !== 0 ? filteredList : items}
+                    {filteredList.length !== 0 && this.state.clicked ? filteredList : 
+                      filteredList.length !== 0 && this.state.clicked === false ? items : 
+                      'No Items Match Your Search'}
                 </div>
             </>
         )
