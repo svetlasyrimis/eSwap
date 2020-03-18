@@ -9,6 +9,7 @@ import Item from '../screens/Item'
 import Items from '../screens/Items'
 import ItemCreate from '../screens/ItemCreate'
 import ItemEdit from '../screens/ItemEdit'
+import SearchPage from '../screens/SearchPage'
 import AuthenticatedRoute from './AuthenticatedRoute'
 const Routes = ({ user, items, setUser, clearUser, addItem }) => (
     <Switch>
@@ -27,9 +28,11 @@ const Routes = ({ user, items, setUser, clearUser, addItem }) => (
         />
         <Route
             exact
-            path="/sign-out"
-            render={props => <SignOut {...props} clearUser={clearUser} user={user} />}
+            path="/search"
+            render={props => <SearchPage {...props} clearUser={clearUser} items={items} user={user} />}
         />
+
+
         <AuthenticatedRoute
             exact
             path="/items"
