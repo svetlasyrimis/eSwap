@@ -6,7 +6,7 @@
 
 ## Relevant Instructions For Viewers:
 
-**eSwap** is an e-commerce site where you, as the user, can create items on your own user profile, delete items from your own user profile, request another user's item, and swap items. The main page has a place to sign up for an account and sign in if you are re-visiting the site. If you are a user (authenticated) then you can search for items via the main database of items that each user has, create items to give away via the "view items" tab, delete and edit your items, request another user's items, and swap items with another user. If you are a guest (unauthenticated) then you can only view a list of items that are available via the search bar.
+**eSwap** is an e-commerce site where you, as the user, can create items on your own user profile, delete items from your own user profile, request another user's item, and swap items. The main page has a place to sign up for an account and sign in if you are re-visiting the site. If you are a user (authenticated) then you can search for items via the main database of items that each user has, create items to give away via the "view items" tab, delete your items, and edit your items. If you are a guest (unauthenticated) then you can only view a list of items that are available via the search bar.
 
 ### MVP:
 -Have a minimum of 1 git commit per day per team member <br>
@@ -29,7 +29,7 @@
 -Email screen within website so that user can request an item<br>
 -Commenting underneath each item for enhanced/quicker user experience<br>
 -Swapping of items<br>
-_Implementing Stripe<br>
+-Implementing Stripe<br>
 
 
 ## Feature List 
