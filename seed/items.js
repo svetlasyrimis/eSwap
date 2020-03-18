@@ -15,13 +15,13 @@ const main = async () => {
             name: 'Salad',
             description: 'Salad description',
             link: 'https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-            user_id: user1[0].username
+            user_id: user1[0]._id
         },
         {
             name: 'Car',
             description: 'Car description',
             link: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-            user_id: user2[0].username
+            user_id: user2[0]._id
         }
       ]
 

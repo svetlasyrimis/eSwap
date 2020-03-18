@@ -11,6 +11,7 @@ import ItemCreate from '../screens/ItemCreate'
 import ItemEdit from '../screens/ItemEdit'
 import SearchPage from '../screens/SearchPage'
 import AuthenticatedRoute from './AuthenticatedRoute'
+
 const Routes = ({ user, items, setUser, clearUser, addItem }) => (
     <Switch>
         <Route
