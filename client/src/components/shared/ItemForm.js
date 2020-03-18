@@ -9,32 +9,32 @@ const ItemForm = ({
 }) => (
         <div className='form-container'>
             <form onSubmit={handleSubmit}>
-                <label>Name</label>
+                <label>Name: </label>
                 <input
                     placeholder='A vetted item'
                     value={item.name}
                     name='name'
                     required
                     onChange={handleChange}
-                />
-                <label>Description</label>
+                /><br></br>
+                <label>Description: </label>
                 <input
                     placeholder='The most swappable thing ever'
                     value={item.description}
                     name='description'
                     required
                     onChange={handleChange}
-                />
-                <label>Link</label>
+                /><br></br>
+                <label>Link: </label>
                 <input
                     placeholder='http://acoolitem.com'
                     value={item.link}
                     name='link'
                     required
                     onChange={handleChange}
-                />
+                /><br></br>
 
-                <button type='submit'>Submit</button>
+                <button type='submit'>Submit</button> <br></br>
                 <button className='danger' onClick={() => history.push(cancelPath)}>
                     Cancel
 			</button>

@@ -9,6 +9,8 @@ const faker = require('faker')
 const main = async () => {
     const user1 = await User.find({ username: 'Joe'})
     const user2 = await User.find({ username: 'Schmo'})
+    console.log(user1)
+    console.log(user2)
 
     const items = [
         {
