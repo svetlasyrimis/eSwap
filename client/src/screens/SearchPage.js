@@ -53,23 +53,29 @@ export class SearchPage extends Component {
         const filteredList = this.state.filteredList.map((item, index) => {
             return (
                 <div key={index}>
-                    <div>
-                        {item.name}
-                        {item.description}
-                        {/* {this.getUsername(item.user_id)} */}
+                    <div className="main-search-item">
+                      <h4>{item.name}</h4>
+                      <p>Description: {item.description}</p>
+                      <p>Link: {item.link}</p>
+                      <p>User Id: {item.user_id}</p>
+                      <img src={item.link} alt="img link" width="400px" height="350px" />
+                      <br></br>
                     </div>
-                    <img src={item.link} alt="img link" width="350px" height="350px" />
                 </div>
             )
         })
+      
         const items = this.props.items.map((item, index) => {
             return (
                 <div key={index}>
-                    <div>
-                        {item.name}
-                        {item.description}
-                    </div>
-                    <img src={item.link} alt="img link" width="350px" height="350px" />
+                    <div className="main-search-item">
+                      <h4>{item.name}</h4>
+                      <p>Description: {item.description}</p>
+                      <p>Link: {item.link}</p>
+                      <p>User Id: {item.user_id}</p>
+                      <img src={item.link} alt="img link" width="400px" height="350px" />
+                      <br></br>
+                  </div>
                 </div>
             )
         });
@@ -98,7 +104,7 @@ export class SearchPage extends Component {
                     <div className="item">item</div> */}
                     {filteredList.length !== 0 && this.state.clicked ? filteredList : 
                       filteredList.length !== 0 && this.state.clicked === false ? items : 
-                      'sorry no items match your search'}
+                      'No Items Match Your Search'}
                 </div>
             </>
         )

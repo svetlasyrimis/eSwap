@@ -48,28 +48,32 @@ class Item extends Component {
 
         return (
             <Layout>
-                <div className="item">
+                <div className="seeMoreItem">
                     <Link to="/items">
                         <span> Back to all items</span>
                     </Link>
-                    <h4>{item.name}</h4>
-                    <p>Description: {item.description}</p>
-                    <p>Link: {item.link}</p>
-                    <p>User Id: {item.user_id}</p>
-                    <div className="buttons">
-                        <button className="danger" onClick={this.destroy}>
-                            Delete Item
-                        </button>
-                        <button
-                            className="edit"
-                            onClick={() =>
-                                this.props.history.push(
-                                    `/items/${this.props.match.params.id}/edit`
-                                )
-                            }
-                        >
-                            Edit
-                        </button>
+                      <hr></hr>
+                      <h4>{item.name}</h4>
+                      <img src={item.link} alt="img link" width="350px" height="350px" />
+                      <p>Description: {item.description}</p>
+                      <p>Link: {item.link}</p>
+                      <p>User Id: {item.user_id}</p>
+                      <div className="buttons">
+                
+                    <button className="danger" onClick={this.destroy}>
+                        Delete Item
+                    </button>
+                    <br></br>
+                    <button
+                        className="edit"
+                        onClick={() =>
+                            this.props.history.push(
+                                `/items/${this.props.match.params.id}/edit`
+                            )
+                        }
+                    >
+                        Edit Item
+                    </button>
                     </div>
                 </div>
             </Layout>

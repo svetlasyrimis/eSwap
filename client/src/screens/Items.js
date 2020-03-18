@@ -6,7 +6,7 @@ export default function Items(props) {
     const renderButton = id => {
         if (user) {
             return (
-                <button onClick={() => history.push(`${match.url}/${id}`)}>
+                <button className="see-more" onClick={() => history.push(`${match.url}/${id}`)}>
                     See More
                 </button>
             )
@@ -20,8 +20,9 @@ export default function Items(props) {
             return items.map(item => {
                 return (
                     <div className="item" key={item._id}>
-                        <h4>{item.name}</h4>
-                        {renderButton(item._id)}
+                      <h4>{item.name}</h4>
+                      <img src={item.link} alt="img link" width="350px" height="350px" />
+                      {renderButton(item._id)}
                     </div>
                 )
             })
@@ -33,7 +34,7 @@ export default function Items(props) {
     if (user) {
         return (
             <Layout>
-                <h4>Items</h4>
+                <h4 className="userItems">User Items</h4>
                 {!items ? <h3>No Items at this time.</h3> : null}
                 <div className="item-container">{renderItems()}</div>
             </Layout>
@@ -41,7 +42,7 @@ export default function Items(props) {
     } else {
         return (
             <div className="landing">
-                <h2>Welcome to the Items App!</h2>
+                <h2>Welcome to eSwap!</h2>
                 <div className="main">
                     {!items ? <h3>No Items at this time.</h3> : null}
                     <div className="item-container">{renderItems()}</div>
