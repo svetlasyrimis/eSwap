@@ -3,7 +3,8 @@ import api from './apiConfig'
 export const getUserByID = async (id) => {
     try {
         const resp = await api.get(`/users/${id}`)
-        return resp.data.users
+        console.log(resp.data);
+        return resp.data
     } catch (error) {
         throw error
     }
