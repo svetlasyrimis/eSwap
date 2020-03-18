@@ -28,7 +28,7 @@ export class SearchPage extends Component {
         // this.setState({ items })
         const filteredList = items.filter((item) => {
             console.log(item.name)
-            return item.name === this.state.search;
+            return item.name.toLowerCase() === this.state.search.toLowerCase()
             // return item.includes(this.state.search)
         })
         console.log(filteredList);
