@@ -4,7 +4,8 @@ import Home from '../screens/Home'
 import Landing from '../screens/Landing'
 import SignIn from '../screens/SignIn.js'
 import SignOut from '../screens/SignOut'
-import SignUp from '../screens/SignUp';
+import SignUp from '../screens/SignUp'
+import Profile from '../screens/Profile'
 import Item from '../screens/Item'
 import Items from '../screens/Items'
 import ItemCreate from '../screens/ItemCreate'
@@ -29,6 +30,11 @@ const Routes = ({ user, items, setUser, clearUser, addItem }) => (
             exact
             path="/sign-out"
             render={props => <SignOut {...props} clearUser={clearUser} user={user} />}
+        />
+        <Route
+            exact
+            path="/profile"
+            render={props => <Profile {...props} user={user} items={items} addItem={addItem} />}
         />
         <AuthenticatedRoute
             exact
