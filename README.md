@@ -2,11 +2,11 @@
 
 ## Project Description
 
-**eSwap** is an e-commerce site where you can create items, delete items from your own user profile, request another user's item, and swap items. Just like eBay you can search for things to bid on/request like electronic equipment, kitchen supplies, clothes, etc. Users will be split into 3 categories - admin, user (authenticated) and guest (unauthenticated). Guests are able to browse, but unable to bid on or upload items. Members are able to upload items for approval, and admins have the ability to update, delete and possibly edit items. Major challenges for the project included tying the backend together with the front-end of an e-commerce site as well as overscoping on the features. Post-mvp features include having an email screen that directly pops up on the website to request another user's item, “favoriting”/”liking” of items, having a watchlist for favorite items, swapping of items, and stripe implementation. <br>
+**eSwap** is an e-commerce site where you can create items, delete items from your own user profile, request another user's item, and swap items. Just like eBay you can search for things to bid on("request") such as electronic equipment, kitchen supplies, clothes, etc. Users will be split into 3 categories - admin, user (authenticated) and guest (unauthenticated). Guests are able to browse, but unable to bid on or upload items. Members are able to upload items, delete items, and edit items. Major challenges for the project included tying the backend together with the front-end of an e-commerce site as well as overscoping on the features. Post-mvp features include having an email screen that directly pops up on the website to request another user's item, “favoriting”/”liking” of items, having a watchlist for favorite items, swapping of items, and stripe implementation. <br>
 
 ## Relevant Instructions For Viewers:
 
-**eSwap** is an e-commerce site where you, as the user, can create items on your own user profile, delete items from your own user profile, request another user's item, and swap items. The main page has a place to sign up for an account, sign in if you are re-visiting the site, and a search bar for the main database of items that each user has. If you are a user (authenticated) then you can create items to give away, request another user's items, and swap items with another user. If you are a guest (unauthenticated) then you can only view a list of items that are available via the search bar.
+**eSwap** is an e-commerce site where you, as the user, can create items on your own user profile, delete items from your own user profile, request another user's item, and swap items. The main page has a place to sign up for an account and sign in if you are re-visiting the site. If you are a user (authenticated) then you can search for items via the main database of items that each user has, create items to give away via the "view items" tab, delete and edit your items, request another user's items, and swap items with another user. If you are a guest (unauthenticated) then you can only view a list of items that are available via the search bar.
 
 ### MVP:
 -Have a minimum of 1 git commit per day per team member <br>
@@ -75,7 +75,6 @@ https://marvelapp.com/a9jaafd/screen/67084205<br>
 ![Initial Wireframe](assets/InitialWireframe.png)
 
 ## Component Hierarchy 
-_Wireframes should be broken into components which then should be described in a component hierarchy._<br>
 
 ### Initial Component Hierarchy
 
