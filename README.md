@@ -79,13 +79,16 @@ _Wireframes should be broken into components which then should be described in a
 
 ### Initial Component Hierarchy
 
-Navbar<br>
--->Home <br>
--->Trade<br>
--->Support<br>
--->Search<br>
+Unauthenticated Navbar<br>
 -->Sign Up<br>
 -->Sign In<br>
+
+Authenticated NavBar<br>
+-->Home <br>
+-->Search Items<br>
+-->View User Items<br>
+-->Sign Out<br>
+
 
 App Container<br>
 |Items<br>
@@ -101,11 +104,6 @@ App Container<br>
   -->Branding copyright<br> 
   -->Social media links<br> 
   -->NavLinks<br> 
-
-### Current Component File Hierarchy
-
-![Current Component Hierarchy](assets/CurrentComponentHierarchy.png)
-
 
 ## List Dependencies 
 
