@@ -13,8 +13,6 @@ const Home = (props) => {
                 <div className="home-nav" style={{ display: "flex", justifyContent: "space-between" }}>
                 </div>
                 <h1 className="home-name">eSwap</h1>
-                <input type="text" name="" id=""/>
-                <Button>Search</Button>
             </Jumbotron>
             <div className="bottom-img"></div>
         </div>
