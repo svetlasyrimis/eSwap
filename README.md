@@ -9,7 +9,6 @@
 **eSwap** is an e-commerce site where you, as the user, can create items on your own user profile, delete items from your own user profile, request another user's item, and swap items. The main page has a place to sign up for an account, sign in if you are re-visiting the site, and a search bar for the main database of items that each user has. If you are a user (authenticated) then you can create items to give away, request another user's items, and swap items with another user. If you are a guest (unauthenticated) then you can only view a list of items that are available via the search bar.
 
 ### MVP:
--Use React Bootstrap <br>
 -Have a minimum of 1 git commit per day per team member <br>
 -Have the frontend deployed on Surge<br>
 -Have the backend deployed on Heroku<br>
