@@ -4,7 +4,7 @@ import Home from '../screens/Home'
 import Landing from '../screens/Landing'
 import SignIn from '../screens/SignIn.js'
 import SignOut from '../screens/SignOut'
-import SignUp from '../screens/SignUp';
+import SignUp from '../screens/SignUp'
 import Item from '../screens/Item'
 import Items from '../screens/Items'
 import ItemCreate from '../screens/ItemCreate'
@@ -31,9 +31,7 @@ const Routes = ({ user, items, setUser, clearUser, addItem }) => (
             exact
             path="/search"
             render={props => <SearchPage {...props} clearUser={clearUser} items={items} user={user} />}
-        />
-
-
+				/>
         <AuthenticatedRoute
             exact
             path="/items"
