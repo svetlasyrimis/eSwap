@@ -7,7 +7,11 @@ import SignUp from '../screens/SignUp';
 // import Navbar from '../layouts/Navbar';
 import Header from '../screens/Header';
 import SignIn from '../screens/SignIn';
+<<<<<<< HEAD
 import SearchPage from '../screens/SearchPage';
+=======
+
+>>>>>>> 64640cb0010c579dae8e7d72c0e53385bce678b0
 // import { Route } from 'react-router-dom';
 import { verifyToken } from "../services/auth"
 
