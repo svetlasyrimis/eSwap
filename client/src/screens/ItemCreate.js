@@ -34,9 +34,9 @@ class ItemCreate extends Component {
             url: `https://mando-list.herokuapp.com/api/items`,
             method: 'POST',
             data: this.state.item
-         })
-         .then(response => this.setState({ createdItem: response.data.item }))
-         .catch(console.error)
+        })
+        .then(response => this.setState({ createdItem: response.data.item }))
+        .catch(console.error)
 
         const res = await createItem(this.state.item)
         if (res.status === 201) {

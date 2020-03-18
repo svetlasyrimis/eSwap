@@ -5,11 +5,10 @@ import Navbar from '../components/shared/Navbar.js'
 const authenticatedOptions = (
     <div className="links">
     <NavLink to="/">Home</NavLink>
+    <NavLink to="/profile">Profile</NavLink>
     <NavLink to="/search">Search Items</NavLink>
-		<NavLink to="/profile">Profile</NavLink>
-    <NavLink to="/sign-out">Sign Out</NavLink>
     <NavLink to="/items">View Items</NavLink>
-    
+    <NavLink to="/sign-out">Sign Out</NavLink>
     </div>
 )
 
