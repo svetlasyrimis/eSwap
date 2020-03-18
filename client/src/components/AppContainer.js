@@ -25,6 +25,7 @@ class AppContainer extends Component {
     if (user) {
       try {
         const items = await getItems()
+        console.log('items', items);
         this.setState({ items })
       } catch (err) {
         console.error(err)

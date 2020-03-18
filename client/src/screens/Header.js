@@ -7,6 +7,7 @@ const authenticatedOptions = (
         <NavLink to="/">Home</NavLink>
 				<NavLink to="/profile">Profile</NavLink>
         <NavLink to="/sign-out">Sign Out</NavLink>
+        <NavLink to="/items">View Items</NavLink>
     </div>
 )
 
