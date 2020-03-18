@@ -52,7 +52,7 @@ class Item extends Component {
                     <Link to="/items">
                         <span> Back to all items</span>
                     </Link>
-                    <h4>{item.title}</h4>
+                    <h4>{item.name}</h4>
                     <p>Link: {item.link}</p>
                     <div className="buttons">
                         <button className="danger" onClick={this.destroy}>
