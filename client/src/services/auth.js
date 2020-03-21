@@ -20,16 +20,6 @@ export const signInUser = async credentials => {
     }
 }
 
-export const verifyUser = async () => {
-  const token = localStorage.getItem('token')
-  if (token) {
-      const res = await api.get('/verify')
-      return res.data
-  }
-  storeToken(token)
-  return false
-}
-
 export const signOut = async user => {
     try {
         await localStorage.clear()
@@ -58,7 +48,6 @@ const storeToken = (token) => {
 export const verifyToken = async () => {
   // debugger;
   const token = localStorage.getItem('token');
-
   if (token !== null) {
     try {
       const resp = await api.get('/verify', {
@@ -67,13 +56,10 @@ export const verifyToken = async () => {
         }
       });
       storeToken(token);
-
       return resp.data.user;
     } catch (e) {
       console.log(e.message);
       console.log('invalid token');
     }
   }
-};
-
-
+}
