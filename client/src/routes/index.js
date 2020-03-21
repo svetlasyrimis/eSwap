@@ -37,12 +37,6 @@ const Routes = ({ user, items, setUser, clearUser, addItem, deleteItemFromList }
             path="/search"
             render={props => <SearchPage {...props} clearUser={clearUser} items={items} user={user} />}
 				/>
-				<Route
-						exact	
-						path="/sign-out"
-						user={user}
-						render={props => <SignOut {...props} clearUser={clearUser} user={user} />}
-				/>
         <AuthenticatedRoute
             exact
             path="/items"
