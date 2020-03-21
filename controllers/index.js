@@ -60,15 +60,13 @@ const signIn = async (req, res) => {
     }
 }
 
-const changePassword = async (req, res) => { }
-
 const verifyUser = (req, res) => {
-  console.log('verifyUser')
+  // console.log('verifyUser')
 try {
   const token = req.headers.authorization.split(" ")[1];
-  console.log('TOKEN_KEY', TOKEN_KEY);
+  // console.log('TOKEN_KEY', TOKEN_KEY);
   const user = jwt.verify(token, TOKEN_KEY);
-  console.log(user)
+  // console.log(user)
   res.locals = user;
   res.json({ user: res.locals });
 } catch (e) {
@@ -76,6 +74,7 @@ try {
 }
 }
 
+const changePassword = async (req, res) => { }
 
 //item functions
 

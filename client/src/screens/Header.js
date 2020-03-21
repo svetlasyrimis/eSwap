@@ -12,17 +12,25 @@ const authenticatedOptions = (
 )
 
 const unauthenticatedOptions = (
-    <div className="links">
+  <div className="links">
+        <NavLink to="/">Home</NavLink>
         <NavLink to="/sign-up">Sign Up</NavLink>
         <NavLink to="/sign-in">Sign In</NavLink>
     </div>
 )
 
+// const alwaysOptions = (
+//   <div className="links">
+//       <NavLink to="/">Home</NavLink>
+//   </div>
+// )
+
 const Header = ({ user }) => (
-    <Navbar>
-        <div className="nav">
-            {user ? authenticatedOptions : unauthenticatedOptions}
-        {user && <span className="navbar-text">Welcome, {user.email}</span>}
+  <Navbar>
+    <div className="nav">
+    {user && <span className="navbar-text">Welcome, {user.email}</span>}
+      {/* {alwaysOptions} */}
+      {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
     </Navbar>
 )

@@ -20,6 +20,16 @@ export const signInUser = async credentials => {
     }
 }
 
+export const verifyUser = async () => {
+  const token = localStorage.getItem('token')
+  if (token) {
+      const res = await api.get('/verify')
+      return res.data
+  }
+  storeToken(token)
+  return false
+}
+
 export const signOut = async user => {
     try {
         await localStorage.clear()
@@ -64,7 +74,6 @@ export const verifyToken = async () => {
       console.log('invalid token');
     }
   }
-}
-
+};
 
 
