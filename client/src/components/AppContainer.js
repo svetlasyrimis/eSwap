@@ -7,7 +7,8 @@ import SignUp from '../screens/SignUp';
 // import Navbar from '../layouts/Navbar';
 import Header from '../screens/Header';
 import SignIn from '../screens/SignIn';
-import { verifyToken } from "../services/auth"
+import { verifyToken } from '../services/auth'
+import { verifyUser } from '../services/auth'
 
 class AppContainer extends Component {
   constructor() {
@@ -19,13 +20,14 @@ class AppContainer extends Component {
   }
 
   async componentDidMount() {
-    const user = await verifyToken()
-    console.log(user)
+    const user = await verifyUser()
+  
     if (user) {
       try {
         const items = await getItems()
         console.log('items', items);
         this.setState({ items })
+        
       } catch (err) {
         console.error(err)
       }

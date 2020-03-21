@@ -234,6 +234,26 @@ div.content {
   align-items: center;
 }
 
+/*-------- Footer --------*/
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.content {
+  padding: 20px;
+}
+Footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/*-------- Responsitivity --------*/
+
 @media only screen 
   and (max-device-width: 420px) 
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -250,3 +270,5 @@ div.navbar a {
 }
 
 }
+
+
