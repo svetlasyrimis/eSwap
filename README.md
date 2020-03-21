@@ -88,22 +88,6 @@ Authenticated NavBar<br>
 -->View User Items<br>
 -->Sign Out<br>
 
-
-App Container<br>
-|Items<br>
-  -->Product name<br>
-  -->Value<br>
-  -->Profile picture<br>
-  -->Category_id<br>
-|Floating Footer<br>
-  -->Add item button<br> 
-  -->Homepage button<br> 
-  -->Back button<br>
-|Footer<br> 
-  -->Branding copyright<br> 
-  -->Social media links<br> 
-  -->NavLinks<br> 
-
 ## List Dependencies 
 
 eBay RESTful API: (https://developer.ebay.com/api-docs/static/ebay-rest-landing.html)<br>
@@ -126,3 +110,11 @@ Surge(front-end): (http://e-swap.surge.sh/) <br>
 Heroku(Back-end): (https://mando-list.herokuapp.com/) <br>
 
 Db Atlas (database): ![Successful Deployment of Mongodb Atlas Database](assets/Successful_Deployment_of_Mongodb_Atlas_Database.png) <br>
+
+## Quick Runthrough of Website Sign Up
+
+![Sign Up Video](assets/SignUp.mov)<br>
+
+## Quick Runthrough of Website Sign In
+
+![Sign In Video](assets/SignIn.mov)<br>
