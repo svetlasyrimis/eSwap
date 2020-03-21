@@ -21,6 +21,7 @@ class ItemCreate extends Component {
         const editedItem = Object.assign(this.state.item, updatedField)
         this.setState({ item: editedItem })
     }
+  
     handleSubmit = async event => {
         event.preventDefault()
         
@@ -28,8 +29,9 @@ class ItemCreate extends Component {
         if (res.status === 201) {
             this.props.addItem(res.data)
             this.setState({ 
-                createdItem: res.data 
+                createdItem: res.data
             })
+            this.props.history.push('/items')
         }
     }
     render() {

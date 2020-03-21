@@ -12,7 +12,7 @@ import ItemEdit from '../screens/ItemEdit'
 import SearchPage from '../screens/SearchPage'
 import AuthenticatedRoute from './AuthenticatedRoute'
 
-const Routes = ({ user, items, setUser, clearUser, addItem }) => (
+const Routes = ({ user, items, setUser, clearUser, addItem, deleteItemFromList }) => (
     <Switch>
         <Route
             exact
@@ -47,7 +47,7 @@ const Routes = ({ user, items, setUser, clearUser, addItem }) => (
             exact
             path="/items/:id"
             user={user}
-            render={props => <Item {...props} />}
+        render={props => <Item {...props} deleteItemFromList={deleteItemFromList} />}
         />
         <AuthenticatedRoute
             exact

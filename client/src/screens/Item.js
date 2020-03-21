@@ -23,11 +23,14 @@ class Item extends Component {
     }
 
     destroy = () => {
-        deleteItem(this.state.item._id)
-            .then(() => this.setState({ deleted: true }))
-            .catch(console.error)
+      deleteItem(this.state.item._id)
+        .then(() => {
+          this.props.deleteItemFromList(this.state.item._id);this.setState({ deleted: true }); 
+    })
+              .catch(console.error)
     }
-
+  
+  
     render() {
         const { item, deleted } = this.state
 
