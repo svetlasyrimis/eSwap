@@ -129,6 +129,7 @@ const updateItem = async (req, res) => {
 }
 
 const deleteItem = async (req, res) => {
+	console.log('delete')
     try {
         const { id } = req.params;
         const deleted = await Item.findByIdAndDelete(id)
