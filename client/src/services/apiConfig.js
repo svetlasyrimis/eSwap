@@ -1,4 +1,4 @@
-import axios from 'axios'
+import Axios from 'axios'
 
 const JwtToken = localStorage.getItem('token') || null
 
@@ -15,7 +15,7 @@ if (window.location.hostname === 'localhost') {
     apiUrl = apiUrls.production
 }
 
-const api = axios.create({
+const api = Axios.create({
     baseURL: apiUrl,
     headers: {
         Authorization: `Bearer ${JwtToken}`,
