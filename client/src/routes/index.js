@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Home from '../screens/Home'
 import Landing from '../screens/Landing'
-import SignIn from '../screens/SignIn.js'
+import SignIn from '../screens/SignIn'
 import SignOut from '../screens/SignOut'
 import SignUp from '../screens/SignUp'
 import Item from '../screens/Item'
@@ -31,6 +31,12 @@ const Routes = ({ user, items, setUser, clearUser, addItem }) => (
             exact
             path="/search"
             render={props => <SearchPage {...props} clearUser={clearUser} items={items} user={user} />}
+				/>
+				<Route
+						exact	
+						path="/sign-out"
+						user={user}
+						render={props => <SignOut {...props} clearUser={clearUser} user={user} />}
 				/>
         <AuthenticatedRoute
             exact

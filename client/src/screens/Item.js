@@ -59,7 +59,6 @@ class Item extends Component {
                       <p>Link: {item.link}</p>
                       <p>User Id: {item.user_id}</p>
                       <div className="buttons">
-                
                     <button className="danger" onClick={this.destroy}>
                         Delete Item
                     </button>

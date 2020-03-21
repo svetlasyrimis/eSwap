@@ -52,7 +52,9 @@ export const deleteItem = async id => {
     try {
         const resp = await api.delete(`/items/${id}`)
         return resp.data
+			  console.log('deleted')
     } catch (error) {
         throw error
+			  console.log('not deleted')
     }
 }
