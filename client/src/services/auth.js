@@ -48,7 +48,7 @@ export const verifyToken = async () => {
   const token = localStorage.getItem('token')
   if (token) {
       const res = await api.get('/verify')
-      return res.data
+      return res.data.user
   }
   return false
 }
