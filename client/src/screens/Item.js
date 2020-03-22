@@ -23,11 +23,14 @@ class Item extends Component {
     }
 
     destroy = () => {
-        deleteItem(this.state.item._id)
-            .then(() => this.setState({ deleted: true }))
-            .catch(console.error)
+      deleteItem(this.state.item._id)
+        .then(() => {
+          this.props.deleteItemFromList(this.state.item._id);this.setState({ deleted: true }); 
+    })
+              .catch(console.error)
     }
-
+  
+  
     render() {
         const { item, deleted } = this.state
 
@@ -59,7 +62,6 @@ class Item extends Component {
                       <p>Link: {item.link}</p>
                       <p>User Id: {item.user_id}</p>
                       <div className="buttons">
-                
                     <button className="danger" onClick={this.destroy}>
                         Delete Item
                     </button>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Home from '../screens/Home'
 import Landing from '../screens/Landing'
-import SignIn from '../screens/SignIn.js'
+import SignIn from '../screens/SignIn'
 import SignOut from '../screens/SignOut'
 import SignUp from '../screens/SignUp'
 import Item from '../screens/Item'
@@ -12,7 +12,7 @@ import ItemEdit from '../screens/ItemEdit'
 import SearchPage from '../screens/SearchPage'
 import AuthenticatedRoute from './AuthenticatedRoute'
 
-const Routes = ({ user, items, setUser, clearUser, addItem }) => (
+const Routes = ({ user, items, setUser, clearUser, addItem, deleteItemFromList }) => (
     <Switch>
         <Route
             exact
@@ -47,7 +47,7 @@ const Routes = ({ user, items, setUser, clearUser, addItem }) => (
             exact
             path="/items/:id"
             user={user}
-            render={props => <Item {...props} />}
+        render={props => <Item {...props} deleteItemFromList={deleteItemFromList} />}
         />
         <AuthenticatedRoute
             exact

@@ -7,7 +7,8 @@ import SignUp from '../screens/SignUp';
 // import Navbar from '../layouts/Navbar';
 import Header from '../screens/Header';
 import SignIn from '../screens/SignIn';
-import { verifyToken } from "../services/auth"
+import { verifyToken } from '../services/auth'
+import { verifyUser } from '../services/auth'
 
 class AppContainer extends Component {
   constructor() {
@@ -18,26 +19,29 @@ class AppContainer extends Component {
     }
   }
 
-  async componentDidMount() {
-    const user = await verifyToken()
-    console.log(user)
+  async componentDidMount() { 
+    const user = await verifyToken();
     if (user) {
-      try {
-        const items = await getItems()
-        console.log('items', items);
-        this.setState({ items })
-      } catch (err) {
-        console.error(err)
-      }
+      this.setState({ user })
+      const items = await getItems()
+      this.setState({ items })
     }
-    this.setState({user})
   }
 
   addItem = item => this.setState({ items: [...this.state.items, item] })
 
-  setUser = user => this.setState({ user })
+  deleteItemFromList = itemId => this.setState(prevState => ({
+    items: prevState.items.filter(item =>
+      item._id !== itemId
+    )
+  }))
 
-  clearUser = () => this.setState({ user: null })
+  setUser = async user => {
+    const items = await getItems()
+    this.setState({ user, items })
+  }
+
+  clearUser = () => this.setState({ user: null, items: [] })
 
   render() {
     const { user, items } = this.state
@@ -52,6 +56,7 @@ class AppContainer extends Component {
             setUser={this.setUser}
             addItem={this.addItem}
             clearUser={this.clearUser}
+            deleteItemFromList={this.deleteItemFromList}
           />
         </Switch>
       </div>
